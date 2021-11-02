@@ -6,4 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".ActivitySelectRoute">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mapas disponibles"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Seleccione la ruta"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/banho"
+        android:layout_width="103dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:onClick="elegirRuta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/banho1" />
+
+    <ImageButton
+        android:id="@+id/aula_3_3"
+        android:layout_width="103dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="48dp"
+        android:onClick="elegirRuta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banho"
+        app:srcCompat="@drawable/banho_clase20" />
+
+    <ImageButton
+        android:id="@+id/escaleras_exteriores"
+        android:layout_width="101dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="48dp"
+        android:onClick="elegirRuta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aula_3_3"
+        app:srcCompat="@drawable/escaleras_exteriores3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

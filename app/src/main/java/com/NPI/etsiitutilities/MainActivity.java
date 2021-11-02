@@ -16,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         database = new IndicacionesDbHelper(this);
+        setContentView(R.layout.activity_main);
+
     }
 
     public void goComedor(View view) {
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goMap(View view) {
-        Intent intent = new Intent(this, ActivityMap.class);
+        Intent intent = new Intent(this, ActivitySelectRoute.class);
         startActivity(intent);
     }
 

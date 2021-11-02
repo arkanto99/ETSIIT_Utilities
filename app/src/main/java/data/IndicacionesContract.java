@@ -5,6 +5,7 @@ import android.provider.BaseColumns;
 public class IndicacionesContract {
 
     public static abstract class IndicacionEntry implements BaseColumns {
+
         public static final String TABLE_NAME ="indicaciones";
 
         public static final String ID = "id";

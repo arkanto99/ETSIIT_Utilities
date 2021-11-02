@@ -11,10 +11,10 @@
         android:theme="@style/Theme.ETSIIT_Utilities">
         <activity
             android:name=".ActivityQRreader"
-            android:exported="true" />
+            android:parentActivityName=".ActivitySelectRoute" />
         <activity
             android:name=".ActivitySelectRoute"
-            android:exported="true" />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityComedor"
             android:parentActivityName=".MainActivity" />
@@ -26,7 +26,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityMap"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".ActivitySelectRoute" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

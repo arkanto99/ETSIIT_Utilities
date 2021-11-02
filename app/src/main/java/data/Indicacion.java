@@ -41,10 +41,6 @@ public class Indicacion {
         return pasos;
     }
 
-    public void setPasos(int pasos) {
-        this.pasos = pasos;
-    }
-
     public ContentValues toContentValues() {
         ContentValues values = new ContentValues();
         values.put(IndicacionesContract.IndicacionEntry.ID, id);
@@ -54,5 +50,13 @@ public class Indicacion {
         values.put(IndicacionesContract.IndicacionEntry.PASOS, pasos);
         values.put(IndicacionesContract.IndicacionEntry.IMAGEN, imagen);
         return values;
+    }
+
+    public String toString(){
+        return "ID: "+this.id
+                +"\n Ruta: "+this.ruta
+                +"\n Imagen: "+this.imagen
+                +"\n Pasos: "+this.pasos
+                +"\n Orden: "+this.orden;
     }
 }

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class IndicacionesDbHelper extends SQLiteOpenHelper {
 
     public static final int DATABASE_VERSION = 2;
-    public static final String DATABASE_NAME = "Indicaciones.db";
+    public static final String DATABASE_NAME = "BaseDatos.db";
 
     public IndicacionesDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -22,6 +22,8 @@ public class IndicacionesDbHelper extends SQLiteOpenHelper {
 
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS "+IndicacionesContract.IndicacionEntry.TABLE_NAME);
 
+        //--------------------------CREACION DE TABLAS-----------------------------------------------
+        //INDICACIONES (Utilizada en el Mapa)
         sqLiteDatabase.execSQL("CREATE TABLE " + IndicacionesContract.IndicacionEntry.TABLE_NAME + " ("
                 + IndicacionesContract.IndicacionEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + IndicacionesContract.IndicacionEntry.ID + " TEXT NOT NULL,"
@@ -32,7 +34,9 @@ public class IndicacionesDbHelper extends SQLiteOpenHelper {
                 + IndicacionesContract.IndicacionEntry.ORDEN+ " INTEGER NOT NULL,"
                 + "UNIQUE (" + IndicacionesContract.IndicacionEntry.ID + "))");
 
-        cargarDatosPiso(sqLiteDatabase);
+
+        //--------------------------CARGA DE DATOS-------------------------
+        cargarDatos(sqLiteDatabase);
     }
 
     @Override
@@ -41,15 +45,6 @@ public class IndicacionesDbHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public long saveIndicacion(Indicacion indicacion) {
-        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
-
-        return sqLiteDatabase.insert(
-                IndicacionesContract.IndicacionEntry.TABLE_NAME,
-                null,
-                indicacion.toContentValues());
-
-    }
 
     public long nuevaIndicacion(SQLiteDatabase db, Indicacion indicacion) {
         return db.insert(
@@ -58,29 +53,7 @@ public class IndicacionesDbHelper extends SQLiteOpenHelper {
                 indicacion.toContentValues());
     }
 
-    private void cargarDatosPiso(SQLiteDatabase db){
-        //RUTA: Habitacion 202
-        nuevaIndicacion(db,new Indicacion("hab202","p0_entrada","Recto",10,1));
-        nuevaIndicacion(db,new Indicacion("hab202","p1_pasillo","Recto",16,2));
-        nuevaIndicacion(db,new Indicacion("hab202","p2_salon","Continua recto",8,3));
-        nuevaIndicacion(db,new Indicacion("hab202","hab_202","Llegaste a tu destino",0,4));
-
-        //RUTA: Habitacion 203
-        nuevaIndicacion(db,new Indicacion("hab203","pasillo1","Recto",4,1));
-        nuevaIndicacion(db,new Indicacion("hab203","pasillo2","Recto",2,2));
-        nuevaIndicacion(db,new Indicacion("hab203","pasillo3","Gira a la derecha",3,3));
-        nuevaIndicacion(db,new Indicacion("hab203","pasillo4","Recto",3,4));
-        nuevaIndicacion(db,new Indicacion("hab203","pasillo5","Recto",3,5));
-        nuevaIndicacion(db,new Indicacion("hab203","pasillo6","Recto",3,6));
-        nuevaIndicacion(db,new Indicacion("hab203","pasillo7","Recto",3,7));
-        nuevaIndicacion(db,new Indicacion("hab203","pasillo8","Gira a la derecha",3,8));
-        nuevaIndicacion(db,new Indicacion("hab203","salon1","Entra en el salón",3,9));
-        nuevaIndicacion(db,new Indicacion("hab203","salon2","Gira a la derecha",3,10));
-        nuevaIndicacion(db,new Indicacion("hab203","salon3","Recto",3,11));
-        nuevaIndicacion(db,new Indicacion("hab203","hab203_1","Recto",3,12));
-        nuevaIndicacion(db,new Indicacion("hab203","hab203_2","Llegaste a tu destino",3,13));
-    }
-
+    //----------METODOS ASOCIADOS A LA TABLA INDICACIONES----------------------------------------
     private void cargarDatos(SQLiteDatabase db){
         //RUTA: CLASE-BANHO
         nuevaIndicacion(db,new Indicacion("Clase_Banho","salida_clase1","Sal de la clase",2,1));
@@ -189,6 +162,7 @@ public class IndicacionesDbHelper extends SQLiteOpenHelper {
 
         if(dbReader!=null){
             String consulta = "SELECT * FROM indicaciones WHERE ruta = '"+nombreRuta +"' ORDER BY orden;";
+            System.out.println(consulta);
             Cursor cursorRuta = dbReader.rawQuery(consulta,null);
             System.out.println("Cursor creado correctamente");
             //Mientras existan elementos en el cursor
@@ -204,11 +178,8 @@ public class IndicacionesDbHelper extends SQLiteOpenHelper {
                         cursorRuta.getString(4),
                         cursorRuta.getInt(5),
                         cursorRuta.getInt(6));
-                System.out.println("ID: "+indicacion.getId()
-                        +"\n Ruta: "+indicacion.getRuta()
-                        +"\n Imagen: "+indicacion.getImagen()
-                        +"\n Pasos: "+indicacion.getPasos()
-                        +"\n Orden: "+indicacion.getOrden());
+
+                System.out.println(indicacion.toString());
                 ruta.add(indicacion);
 
                 System.out.println("Indicacion "+indicacion.getOrden()+" añadida correctamente");

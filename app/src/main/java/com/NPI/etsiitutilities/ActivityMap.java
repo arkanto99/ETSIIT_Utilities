@@ -61,6 +61,7 @@ public class ActivityMap extends AppCompatActivity implements SensorEventListene
         setContentView(R.layout.activity_map);
 
         //////////////////////////////
+
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
         mSensorAcc = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -75,6 +76,7 @@ public class ActivityMap extends AppCompatActivity implements SensorEventListene
         }
 
         podometro = new Podometro(mSensorAcc);
+
         //////////////////////////////////
 
         //Obtenemos las referencias a los objetos a modificar en la pantalla
@@ -108,13 +110,22 @@ public class ActivityMap extends AppCompatActivity implements SensorEventListene
     }
 
     private void inicializarIndicaciones(String ruta){
-        if(ruta.equals("hab202")) {
-            this.indicaciones = database.obtenerRuta("hab202");
-            titleIndicacion.setText("Ruta a la habitación 202");
+        System.out.println("Ruta seleccionada: "+ruta);
+        if(ruta.equals("Clase_Banho")) {
+            System.out.println("Obteniendo ruta Clase_Banho...");
+            this.indicaciones = database.obtenerRuta("Clase_Banho");
+            titleIndicacion.setText("Ruta de la clase al baño");
         }
-        else if(ruta.equals("hab203")){
-            this.indicaciones = database.obtenerRuta("hab203");
-            titleIndicacion.setText("Ruta a la habitación 203");
+        else if(ruta.equals("Banho_Clase")){
+            System.out.println("Obteniendo ruta Banho_Clase...");
+            this.indicaciones = database.obtenerRuta("Banho_Clase");
+            titleIndicacion.setText("Ruta del baño a clase");
+        }
+
+        else if(ruta.equals("Clase_EscalerasExteriores")){
+            System.out.println("Obteniendo ruta Clase_EscalerasExteriores...");
+            this.indicaciones = database.obtenerRuta("Clase_EscalerasExteriores");
+            titleIndicacion.setText("Ruta de clase a las escaleras exteriores");
         }
 
         Indicacion primeraIndicacion = this.indicaciones.get(0);
