@@ -10,19 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ETSIIT_Utilities">
         <activity
-            android:name="com.NPI.etsiitutilities.ActivityComedor"
+            android:name=".ActivityQRreader"
+            android:exported="true" />
+        <activity
+            android:name=".ActivitySelectRoute"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityComedor"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.NPI.etsiitutilities.ActivityParking"
+            android:name=".ActivityParking"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.NPI.etsiitutilities.ActivityHorarios"
+            android:name=".ActivityHorarios"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.NPI.etsiitutilities.ActivityMap"
+            android:name=".ActivityMap"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.NPI.etsiitutilities.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

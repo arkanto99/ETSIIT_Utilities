@@ -6,12 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import data.IndicacionesDbHelper;
+
 public class MainActivity extends AppCompatActivity {
+
+    // Base de datos. Se declara como Static para poder usarla en cualquier Activity con los datos cargados
+    protected static IndicacionesDbHelper database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        database = new IndicacionesDbHelper(this);
     }
 
     public void goComedor(View view) {
