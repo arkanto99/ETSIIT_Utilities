@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ETSIIT_Utilities</string>
+    <string name="texto_detectado"></string>
 </resources>
