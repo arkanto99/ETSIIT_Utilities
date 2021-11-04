@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ETSIIT_Utilities">
         <activity
+            android:name=".FotoParking"
+            android:exported="false" />
+        <activity
             android:name=".ActivityQRreader"
             android:parentActivityName=".ActivitySelectRoute" />
         <activity

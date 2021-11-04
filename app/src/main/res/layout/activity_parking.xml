@@ -6,13 +6,175 @@
     android:layout_height="match_parent"
     tools:context=".ActivityParking">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PARKING"
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gesture_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:eventsInterceptionEnabled="true"
+        android:gestureStrokeType="multiple"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:padding="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:padding="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Libres"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:id="@+id/bicis_total"
+                    android:padding="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/bicis_libres"
+                    android:padding="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/abrir_bicis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Bicis" />
+            </TableRow>
+
+            <TableRow
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:id="@+id/patinetes_total"
+                    android:padding="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/patinetes_libres"
+                    android:padding="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/abrir_patinetes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Patinetes" />
+            </TableRow>
+
+            <TableRow
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:id="@+id/coches_total"
+                    android:padding="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/coches_libres"
+                    android:padding="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/abrir_coches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Coches" />
+            </TableRow>
+
+            <TableRow
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:id="@+id/motos_total"
+                    android:padding="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/motos_libres"
+                    android:padding="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/abrir_motos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Motos" />
+            </TableRow>
+
+        </TableLayout>
+    </android.gesture.GestureOverlayView>
 </androidx.constraintlayout.widget.ConstraintLayout>
