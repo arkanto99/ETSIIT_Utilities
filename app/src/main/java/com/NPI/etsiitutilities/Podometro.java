@@ -17,7 +17,7 @@ import java.util.List;
 
 public class Podometro {
 
-    private static int SMOOTHING_WINDOW_SIZE = 30; //SMOOTHING_WINDOW_SIZE = 20
+    private static int SMOOTHING_WINDOW_SIZE = 20; //SMOOTHING_WINDOW_SIZE = 20
 
     // Individual light and proximity sensors.
     private Sensor mSensorAcc;
@@ -44,9 +44,9 @@ public class Podometro {
 
     //peak detection variables
     private double lastXPoint = 1d;
-    double stepThreshold = 1.0d; //stepThreshold = 1.0d
-    double noiseThreshold = 2d;  //noiseThreshols = 2d;
-    private int windowSize = 10; //windowsSize = 10;
+    double stepThreshold = 1d; //stepThreshold = 1.0d
+    double noiseThreshold = 1.8d;  //noiseThreshols = 2d;
+    private int windowSize = 18; //windowsSize = 10;
 
     public Podometro(Sensor SensorAcc){
         this.mSeries1 = new LineGraphSeries<>();

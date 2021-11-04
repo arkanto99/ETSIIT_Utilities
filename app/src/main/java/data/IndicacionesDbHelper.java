@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class IndicacionesDbHelper extends SQLiteOpenHelper {
 
-    public static final int DATABASE_VERSION = 2;
+    public static final int DATABASE_VERSION = 3;
     public static final String DATABASE_NAME = "BaseDatos.db";
 
     public IndicacionesDbHelper(Context context) {
@@ -59,15 +59,15 @@ public class IndicacionesDbHelper extends SQLiteOpenHelper {
         nuevaIndicacion(db,new Indicacion("Clase_Banho","salida_clase1","Sal de la clase",2,1));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","salida_clase2","Sal de la clase",1,2));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","salida_clase3","Gira a la izquierda",2,3));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho1","Camina recto",2,4));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho1","Camina recto",1,4));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho2","Camina recto",2,5));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho3","Camina recto",2,6));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho3","Camina recto",1,6));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho4","Camina recto",2,7));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho5","Camina recto",2,8));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho5","Camina recto",1,8));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho6","Camina recto",2,9));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho7","Camina recto",2,10));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho7","Camina recto",1,10));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho8","Camina recto",2,11));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho9","Camina recto",2,12));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho9","Camina recto",1,12));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho10","Camina recto",2,13));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho11","Camina recto",2,14));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho12","Camina recto",2,15));
@@ -91,9 +91,9 @@ public class IndicacionesDbHelper extends SQLiteOpenHelper {
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho30","Camina recto",2,33));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho31","Camina recto",2,34));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho32","Gira a la derecha",2,35));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","banho1","Gira a la derecha",1,36));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","banho2","Gira a la derecha",1,37));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","banho3","Gira a la derecha",1,38));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","banho1","Gira a la derecha",2,36));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","banho2","Gira a la derecha",2,37));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","banho3","Gira a la derecha",2,38));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","banho_destino1","Sigue recto",2,39));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","banho_destino2","Llegaste a tu destino",2,40));
 
