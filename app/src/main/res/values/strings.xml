@@ -2,4 +2,5 @@
     <string name="app_name">ETSIIT_Utilities</string>
     <string name="texto_detectado"></string>
     <string name="instrucciones_parking">Dibuje con el dedo y en mayuscula la inicial del parking deseado</string>
+    <string name="agitar">Agitar para ver plazas de parking</string>
 </resources>
