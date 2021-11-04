@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         // Detectar agitación
         sm = (SensorManager) getSystemService(SENSOR_SERVICE);
         sd = new ShakeDetector(() -> {
-            Intent intent = new Intent(this, ActivityParking.class);
+            Intent intent = new Intent(this, ActivityTouchParking.class);
             startActivity(intent);
         });
         sd.start(sm);
