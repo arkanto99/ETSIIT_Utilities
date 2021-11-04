@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class IndicacionesDbHelper extends SQLiteOpenHelper {
 
-    public static final int DATABASE_VERSION = 3;
+    public static final int DATABASE_VERSION = 4;
     public static final String DATABASE_NAME = "BaseDatos.db";
 
     public IndicacionesDbHelper(Context context) {
@@ -73,23 +73,23 @@ public class IndicacionesDbHelper extends SQLiteOpenHelper {
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho12","Camina recto",2,15));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho13","Camina recto",2,16));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho14","Camina recto",2,17));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho15","Camina recto",2,18));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho16","Camina recto",2,19));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho17","Camina recto",2,20));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho18","Camina recto",2,21));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho19","Camina recto",2,22));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho20","Camina recto",2,23));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho21","Camina recto",2,24));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho22","Camina recto",2,25));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho23","Camina recto",2,26));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho24","Camina recto",2,27));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho25","Camina recto",2,28));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho26","Camina recto",2,29));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho27","Camina recto",2,30));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho28","Camina recto",2,31));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho29","Camina recto",2,32));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho30","Camina recto",2,33));
-        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho31","Camina recto",2,34));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho15","Camina recto",3,18));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho16","Camina recto",3,19));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho17","Camina recto",3,20));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho18","Camina recto",3,21));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho19","Camina recto",3,22));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho20","Camina recto",3,23));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho21","Camina recto",3,24));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho22","Camina recto",3,25));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho23","Camina recto",3,26));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho24","Camina recto",3,27));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho25","Camina recto",3,28));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho26","Camina recto",3,29));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho27","Camina recto",3,30));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho28","Camina recto",3,31));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho29","Camina recto",3,32));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho30","Camina recto",3,33));
+        nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho31","Camina recto",3,34));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","clase_banho32","Gira a la derecha",2,35));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","banho1","Gira a la derecha",2,36));
         nuevaIndicacion(db,new Indicacion("Clase_Banho","banho2","Gira a la derecha",2,37));
@@ -134,19 +134,19 @@ public class IndicacionesDbHelper extends SQLiteOpenHelper {
         nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","salida_clase1","Sal de la clase",2,1));
         nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","salida_clase2","Sal de la clase",1,2));
         nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","salida_clase3","Gira a la derecha",2,3));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras1","Camina recto",2,4));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras2","Camina recto",2,5));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras2","Camina recto",2,6));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras3","Camina recto",2,7));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras4","Camina recto",2,8));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras5","Camina recto",2,9));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras6","Camina recto",2,10));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras7","Camina recto",2,11));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras8","Camina recto",2,12));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras9","Camina recto",2,13));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras10","Gira ligeramente a la derecha",2,14));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras11","Gira ligeramente a la derecha",2,15));
-        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras12","Cruza la puerta",2,16));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras1","Camina recto",1,4));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras2","Camina recto",1,5));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras2","Camina recto",1,6));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras3","Camina recto",1,7));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras4","Camina recto",1,8));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras5","Camina recto",1,9));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras6","Camina recto",1,10));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras7","Camina recto",1,11));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras8","Camina recto",1,12));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras9","Camina recto",1,13));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras10","Gira ligeramente a la derecha",1,14));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras11","Gira ligeramente a la derecha",1,15));
+        nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","clase_escaleras12","Cruza la puerta",1,16));
         nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","escaleras_exteriores1","Gira a la derecha",1,17));
         nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","escaleras_exteriores3","Llegaste a tu destino",2,18));
 
