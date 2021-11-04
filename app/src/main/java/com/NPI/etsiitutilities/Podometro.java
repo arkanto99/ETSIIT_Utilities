@@ -44,7 +44,7 @@ public class Podometro {
 
     //peak detection variables
     private double lastXPoint = 1d;
-    double stepThreshold = 1d; //stepThreshold = 1.0d
+    double stepThreshold = 0.8d; //stepThreshold = 1.0d
     double noiseThreshold = 1.8d;  //noiseThreshols = 2d;
     private int windowSize = 18; //windowsSize = 10;
 
