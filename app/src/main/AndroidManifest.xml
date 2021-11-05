@@ -33,6 +33,9 @@
             android:name=".ActivityHorarios"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".ActivityMostrarAsignatura"
+            android:parentActivityName=".ActivityHorarios" />
+        <activity
             android:name=".ActivityMap"
             android:parentActivityName=".ActivitySelectRoute" />
         <activity

@@ -1,8 +1,11 @@
 package com.NPI.etsiitutilities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Base de datos. Se declara como Static para poder usarla en cualquier Activity con los datos cargados
     protected static IndicacionesDbHelper database;
+    private static final int CAMERA_REQUEST = 1888;
 
     private SensorManager sm;
     private ShakeDetector sd;
@@ -23,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         database = new IndicacionesDbHelper(this);
         setContentView(R.layout.activity_main);
+
+        if (ActivityCompat.checkSelfPermission(getApplicationContext(),
+                Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(MainActivity.this,
+                    new String[]{Manifest.permission.CAMERA},
+                    CAMERA_REQUEST);
+            return;
+        }
 
         // Detectar agitación
         sm = (SensorManager) getSystemService(SENSOR_SERVICE);

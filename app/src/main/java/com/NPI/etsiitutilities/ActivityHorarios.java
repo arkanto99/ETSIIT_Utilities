@@ -26,14 +26,15 @@ public class ActivityHorarios extends AppCompatActivity {
     private TextView mTextoAulaDetectada;
 
     private boolean aula_encontrada = false;
+    private static final int CAMERA_REQUEST = 1888;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_horarios);
 
-        mCameraView = (SurfaceView) findViewById(R.id.camara_source);
-        mTextoAulaDetectada = (TextView) findViewById(R.id.texto_aula_detectada);
+        mCameraView = findViewById(R.id.camara_source);
+        mTextoAulaDetectada = findViewById(R.id.texto_aula_detectada);
 
         iniciar();
     }
@@ -72,7 +73,7 @@ public class ActivityHorarios extends AppCompatActivity {
                                 Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
                             ActivityCompat.requestPermissions(ActivityHorarios.this,
                                     new String[]{Manifest.permission.CAMERA},
-                                    2517);
+                                    CAMERA_REQUEST);
                             return;
                         }
                         mCameraSource.start(mCameraView.getHolder());
@@ -106,7 +107,7 @@ public class ActivityHorarios extends AppCompatActivity {
                         public void run() {
                             StringBuilder stringBuilder = new StringBuilder();
 
-                            for(int i=0;i<items.size() && aula_encontrada==false;i++){
+                            for(int i = 0; i<items.size() && !aula_encontrada; i++){
                                 if (items.valueAt(i).getValue().equals("Aula 3.3.")) {
                                     TextBlock itemAula = items.valueAt(i);
                                     stringBuilder.append(itemAula.getValue());
@@ -118,7 +119,6 @@ public class ActivityHorarios extends AppCompatActivity {
                             }
 
                             mTextoAulaDetectada.setText(stringBuilder.toString());
-                            return;
                         }
                     });
                 }
