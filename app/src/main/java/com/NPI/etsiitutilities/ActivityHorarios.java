@@ -108,7 +108,7 @@ public class ActivityHorarios extends AppCompatActivity {
                             StringBuilder stringBuilder = new StringBuilder();
 
                             for(int i = 0; i<items.size() && !aula_encontrada; i++){
-                                if (items.valueAt(i).getValue().equals("Aula 3.3.")) {
+                                if (items.valueAt(i).getValue().equals("Aula 3.3")) {
                                     TextBlock itemAula = items.valueAt(i);
                                     stringBuilder.append(itemAula.getValue());
                                     aula_encontrada = true;
