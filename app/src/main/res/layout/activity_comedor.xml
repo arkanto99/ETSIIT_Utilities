@@ -28,5 +28,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/banho1" />
 
+    <ImageView
+        android:id="@+id/plato_l_2"
+        android:layout_width="393dp"
+        android:layout_height="219dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banho1" />
+
+    <ImageView
+        android:id="@+id/plato_l_3"
+        android:layout_width="256dp"
+        android:layout_height="277dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banho_clase12" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
