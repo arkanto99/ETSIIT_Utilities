@@ -14,9 +14,11 @@
 
         <activity
             android:name=".ActivityTouchParking"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".ActivityFotoParking"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".ActivityQRreader"
@@ -30,6 +32,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityParking"
+            android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityHorarios"
@@ -42,6 +45,7 @@
             android:parentActivityName=".ActivitySelectRoute" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:exported="true">
             <intent-filter>

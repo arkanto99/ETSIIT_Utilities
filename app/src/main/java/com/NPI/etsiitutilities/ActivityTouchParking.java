@@ -44,7 +44,7 @@ public class ActivityTouchParking extends AppCompatActivity {
 
                 Prediction predict = predictions.get(0);
 
-                if (predict.score >= 3.0) {
+                if (predict.score >= 4.0) {
                     opcion = predict.name.charAt(0);
 
                     Intent intent = new Intent(context, ActivityFotoParking.class);
