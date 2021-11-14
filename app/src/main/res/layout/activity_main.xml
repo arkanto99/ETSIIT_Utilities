@@ -74,66 +74,38 @@
 
             <TableRow android:gravity="center_horizontal">
 
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:width="150dp"
-                    android:height="250dp"
-                    android:background="@drawable/boton_home"
-                    android:fontFamily="sans-serif-medium"
+                <ImageButton
+                    android:id="@+id/boton_mapa"
+                    android:layout_margin="13dp"
+                    android:background="#00FFFFFF"
                     android:onClick="goMap"
-                    android:text="Mapa"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    app:srcCompat="@drawable/mapa_button" />
 
 
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:width="150dp"
-                    android:height="250dp"
-                    android:background="@drawable/boton_home"
-                    android:fontFamily="sans-serif-medium"
+                <ImageButton
+                    android:id="@+id/boton_horario"
+                    android:layout_margin="13dp"
+                    android:background="#00FFFFFF"
                     android:onClick="goHorarios"
-                    android:text="Horarios"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    app:srcCompat="@drawable/horario_button" />
 
             </TableRow>
 
             <TableRow android:gravity="center_horizontal">
 
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:width="150dp"
-                    android:height="250dp"
-                    android:background="@drawable/boton_home"
-                    android:fontFamily="sans-serif-medium"
+                <ImageButton
+                    android:id="@+id/boton_parking"
+                    android:layout_margin="13dp"
+                    android:background="#00FFFFFF"
                     android:onClick="goParking"
-                    android:text="Parking"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    app:srcCompat="@drawable/parking_button" />
 
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:width="150dp"
-                    android:height="250dp"
-                    android:background="@drawable/boton_home"
-                    android:fontFamily="sans-serif-medium"
+                <ImageButton
+                    android:id="@+id/boton_comedor"
+                    android:layout_margin="13dp"
+                    android:background="#00FFFFFF"
                     android:onClick="goComedor"
-                    android:text="Comedor"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    app:srcCompat="@drawable/comedor_button" />
 
             </TableRow>
         </TableLayout>

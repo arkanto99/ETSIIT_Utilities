@@ -35,19 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="2dp"
-        android:text="Jueves, 18 de noviembre"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textActionBar"
-        app:layout_constraintStart_toEndOf="@+id/textActionBar" />
-
-    <TextView
-        android:id="@+id/currentDate2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="2dp"
-        android:text="Jueves, 18 de noviembre"
+        android:text="Del 15 al 19 de noviembre"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textActionBar"
@@ -55,47 +43,197 @@
 
     <ImageView
         android:id="@+id/box_lunes"
-        android:layout_width="309dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="256dp"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar"
+        app:srcCompat="@drawable/degradado1"
+        tools:layout_editor_absoluteX="9dp" />
+
+    <TextView
+        android:id="@+id/lunes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Lunes"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/box_lunes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/degradado1" />
+        app:layout_constraintStart_toStartOf="@+id/box_lunes"
+        app:layout_constraintTop_toTopOf="@+id/box_lunes" />
+
+    <ImageView
+        android:id="@+id/box_martes"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/box_lunes"
+        app:srcCompat="@drawable/degradado1"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/martes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Martes"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/box_martes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/box_lunes"
+        app:layout_constraintTop_toBottomOf="@+id/box_lunes" />
+
+    <ImageView
+        android:id="@+id/box_miercoles"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/box_martes"
+        app:srcCompat="@drawable/degradado1"
+        tools:layout_editor_absoluteX="-9dp" />
+
+    <TextView
+        android:id="@+id/miercoles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Miércoles"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/box_miercoles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/box_lunes"
+        app:layout_constraintTop_toBottomOf="@+id/box_martes" />
+
+    <ImageView
+        android:id="@+id/box_jueves"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/box_miercoles"
+        app:srcCompat="@drawable/degradado1"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/jueves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Jueves"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/box_jueves"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/box_lunes"
+        app:layout_constraintTop_toBottomOf="@+id/box_miercoles" />
+
+    <ImageView
+        android:id="@+id/box_viernes"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/box_jueves"
+        app:srcCompat="@drawable/degradado1"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/viernes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Viernes"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/box_viernes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/box_lunes"
+        app:layout_constraintTop_toBottomOf="@+id/box_jueves" />
+
+    <View
+        android:id="@+id/telon_negro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:background="#74000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/telon_negro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:background="#74000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/telon_negro3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:background="#74000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/plato_l_1"
-        android:layout_width="352dp"
-        android:layout_height="206dp"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
         android:alpha="0"
-        android:background="#5C00FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/banho1" />
+        app:srcCompat="@drawable/l1" />
 
     <ImageView
         android:id="@+id/plato_l_2"
-        android:layout_width="393dp"
-        android:layout_height="219dp"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
         android:alpha="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/banho1" />
+        app:srcCompat="@drawable/l2" />
 
     <ImageView
         android:id="@+id/plato_l_3"
-        android:layout_width="256dp"
-        android:layout_height="277dp"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
         android:alpha="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/banho_clase12" />
+        app:srcCompat="@drawable/l3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
