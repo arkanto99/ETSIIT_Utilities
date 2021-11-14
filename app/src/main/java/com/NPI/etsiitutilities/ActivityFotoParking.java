@@ -26,13 +26,13 @@ public class ActivityFotoParking extends AppCompatActivity {
         switch (opcion) {
             case 'B':
                 titulo.setText("Parking Bicicletas");
-                texto.setText("7 Plazas libres");
-                texto.setTextColor(Color.GREEN);
+                texto.setText("0 Plazas libres");
+                texto.setTextColor(Color.RED);
                 drawableResourceId = this.getResources().getIdentifier("pbicis", "drawable", this.getPackageName());
                 break;
             case 'P':
                 titulo.setText("Parking Patinetes");
-                texto.setText("3 Plazas libres");
+                texto.setText("9 Plazas libres");
                 texto.setTextColor(Color.GREEN);
                 drawableResourceId = this.getResources().getIdentifier("ppatinetes", "drawable", this.getPackageName());
                 break;
@@ -44,8 +44,8 @@ public class ActivityFotoParking extends AppCompatActivity {
                 break;
             case 'M':
                 titulo.setText("Parking Motos");
-                texto.setText("0 Plazas libres");
-                texto.setTextColor(Color.RED);
+                texto.setText("15 Plazas libres");
+                texto.setTextColor(Color.GREEN);
                 drawableResourceId = this.getResources().getIdentifier("pmotos", "drawable", this.getPackageName());
                 break;
         }
