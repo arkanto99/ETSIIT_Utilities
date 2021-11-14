@@ -235,5 +235,137 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/l3" />
 
+    <ImageView
+        android:id="@+id/plato_m_1"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/m1" />
+
+    <ImageView
+        android:id="@+id/plato_m_2"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/m2" />
+
+    <ImageView
+        android:id="@+id/plato_m_3"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/m3" />
+
+    <ImageView
+        android:id="@+id/plato_x_1"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/x1" />
+
+    <ImageView
+        android:id="@+id/plato_x_2"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/x2" />
+
+    <ImageView
+        android:id="@+id/plato_x_3"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/x3" />
+
+    <ImageView
+        android:id="@+id/plato_j_1"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/j1" />
+
+    <ImageView
+        android:id="@+id/plato_j_2"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/j2" />
+
+    <ImageView
+        android:id="@+id/plato_j_3"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/j3" />
+
+    <ImageView
+        android:id="@+id/plato_v_1"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/v1" />
+
+    <ImageView
+        android:id="@+id/plato_v_2"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/v2" />
+
+    <ImageView
+        android:id="@+id/plato_v_3"
+        android:layout_width="375dp"
+        android:layout_height="563dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/v3" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
