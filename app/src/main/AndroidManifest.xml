@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ETSIIT_Utilities">
+
         <activity
             android:name=".ActivityTouchParking"
             android:exported="false" />
@@ -25,6 +26,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityComedor"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityParking"
@@ -40,6 +42,7 @@
             android:parentActivityName=".ActivitySelectRoute" />
         <activity
             android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

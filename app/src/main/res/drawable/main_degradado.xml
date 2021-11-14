@@ -10,7 +10,4 @@
         android:endColor="#DF2D0D"
         android:angle="180"
         />
-    <corners
-        android:radius="20dp"
-        />
 </shape>
