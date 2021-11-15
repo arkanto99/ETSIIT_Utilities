@@ -45,7 +45,7 @@
                 android:padding="24dp"
                 android:text="Total"
                 android:textAlignment="textStart"
-                android:textColor="@color/teal_700"
+                android:textColor="@color/primaryColor"
                 android:textSize="16sp" />
 
             <TextView
@@ -54,7 +54,7 @@
                 android:padding="24dp"
                 android:text="Libres"
                 android:textAlignment="textStart"
-                android:textColor="@color/teal_700"
+                android:textColor="@color/primaryColor"
                 android:textSize="16sp" />
 
         </TableRow>
@@ -68,7 +68,7 @@
                 android:padding="24dp"
                 android:text="25"
                 android:textAlignment="textStart"
-                android:textColor="@color/teal_700"
+                android:textColor="@color/grey"
                 android:textSize="16sp" />
 
             <TextView
@@ -78,16 +78,18 @@
                 android:padding="24dp"
                 android:text="0"
                 android:textAlignment="textStart"
-                android:textColor="@color/teal_700"
+                android:textColor="@color/grey"
                 android:textSize="16sp" />
 
             <Button
                 android:id="@+id/abrir_bicis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/degradado1"
                 android:onClick="goBicis"
                 android:padding="10dp"
-                android:text="Bicis" />
+                android:text="Bicis"
+                android:textColor="@color/white" />
         </TableRow>
 
         <TableRow android:orientation="horizontal">
@@ -99,7 +101,7 @@
                 android:padding="24dp"
                 android:text="12"
                 android:textAlignment="textStart"
-                android:textColor="@color/teal_700"
+                android:textColor="@color/grey"
                 android:textSize="16sp" />
 
             <TextView
@@ -109,16 +111,18 @@
                 android:padding="24dp"
                 android:text="9"
                 android:textAlignment="textStart"
-                android:textColor="@color/teal_700"
+                android:textColor="@color/grey"
                 android:textSize="16sp" />
 
             <Button
                 android:id="@+id/abrir_patinetes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/degradado1"
                 android:onClick="goPatinetes"
                 android:padding="10dp"
-                android:text="Patinetes" />
+                android:text="Patinetes"
+                android:textColor="@color/white" />
         </TableRow>
 
         <TableRow android:orientation="horizontal">
@@ -130,7 +134,7 @@
                 android:padding="24dp"
                 android:text="30"
                 android:textAlignment="textStart"
-                android:textColor="@color/teal_700"
+                android:textColor="@color/grey"
                 android:textSize="16sp" />
 
             <TextView
@@ -140,16 +144,18 @@
                 android:padding="24dp"
                 android:text="2"
                 android:textAlignment="textStart"
-                android:textColor="@color/teal_700"
+                android:textColor="@color/grey"
                 android:textSize="16sp" />
 
             <Button
                 android:id="@+id/abrir_coches"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/degradado1"
                 android:onClick="goCoches"
                 android:padding="10dp"
-                android:text="Coches" />
+                android:text="Coches"
+                android:textColor="@color/white" />
         </TableRow>
 
         <TableRow android:orientation="horizontal">
@@ -161,7 +167,7 @@
                 android:padding="24dp"
                 android:text="20"
                 android:textAlignment="textStart"
-                android:textColor="@color/teal_700"
+                android:textColor="@color/grey"
                 android:textSize="16sp" />
 
             <TextView
@@ -171,16 +177,19 @@
                 android:padding="24dp"
                 android:text="15"
                 android:textAlignment="textStart"
-                android:textColor="@color/teal_700"
+                android:textColor="@color/grey"
                 android:textSize="16sp" />
 
             <Button
                 android:id="@+id/abrir_motos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/degradado1"
                 android:onClick="goMotos"
                 android:padding="10dp"
-                android:text="Motos" />
+                android:text="Motos"
+                android:textAllCaps="@color/white"
+                android:textColor="@color/white" />
         </TableRow>
 
     </TableLayout>

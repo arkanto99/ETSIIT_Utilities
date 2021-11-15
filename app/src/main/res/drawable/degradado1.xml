@@ -11,6 +11,6 @@
         android:angle="180"
         />
     <corners
-        android:radius="20dp"
+        android:radius="10dp"
         />
 </shape>
