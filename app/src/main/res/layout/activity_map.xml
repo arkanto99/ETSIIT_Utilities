@@ -6,27 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".ActivityMap">
 
+    <View
+        android:id="@+id/top_bar2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/main_degradado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/titleIndicacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="50dp"
+        android:fontFamily="sans-serif-black"
         android:text="Titulo"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="@+id/top_bar2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/top_bar2" />
 
     <ImageView
         android:id="@+id/imageIndicacion"
         android:layout_width="356dp"
         android:layout_height="558dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleIndicacion"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar2"
         app:srcCompat="@android:drawable/ic_menu_mapmode" />
 
     <TextView

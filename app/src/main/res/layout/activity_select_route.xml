@@ -6,19 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".ActivitySelectRoute">
 
+    <View
+        android:id="@+id/top_bar6"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/main_degradado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/titleIndicacion3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:fontFamily="sans-serif-black"
         android:text="Mapas disponibles"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.072" />
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="@+id/top_bar6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_bar6" />
 
     <ImageButton
         android:id="@+id/banho"
@@ -52,13 +60,13 @@
         android:id="@+id/escaleras_exteriores"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="28dp"
         android:adjustViewBounds="true"
         android:onClick="elegirRuta"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar6"
         app:srcCompat="@drawable/escaleras_exteriores3" />
 
     <TextView
@@ -93,7 +101,7 @@
         android:id="@+id/textView8"
         android:layout_width="166dp"
         android:layout_height="102dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="80dp"
         android:text="Ruta del aula 3.3 a las Escaleras Exteriores"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -101,6 +109,6 @@
         app:layout_constraintEnd_toStartOf="@+id/escaleras_exteriores"
         app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/top_bar6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
