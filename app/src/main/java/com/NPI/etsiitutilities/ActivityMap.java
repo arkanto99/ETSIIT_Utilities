@@ -44,11 +44,6 @@ public class ActivityMap extends AppCompatActivity implements SensorEventListene
     public static float mStepCounter = 0;
 
 
-    public void leerQR(View view) {
-        Intent intent = new Intent(this, ActivityQRreader.class);
-        startActivity(intent);
-    }
-
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,7 +109,7 @@ public class ActivityMap extends AppCompatActivity implements SensorEventListene
         if(ruta.equals("Clase_Banho")) {
             System.out.println("Obteniendo ruta Clase_Banho...");
             this.indicaciones = database.obtenerRuta("Clase_Banho");
-            titleIndicacion.setText("Ruta de la clase al baño");
+            titleIndicacion.setText("Ruta de clase al baño");
         }
         else if(ruta.equals("Banho_Clase")){
             System.out.println("Obteniendo ruta Banho_Clase...");
@@ -125,7 +120,7 @@ public class ActivityMap extends AppCompatActivity implements SensorEventListene
         else if(ruta.equals("Clase_EscalerasExteriores")){
             System.out.println("Obteniendo ruta Clase_EscalerasExteriores...");
             this.indicaciones = database.obtenerRuta("Clase_EscalerasExteriores");
-            titleIndicacion.setText("Ruta de clase a las escaleras exteriores");
+            titleIndicacion.setText("Ruta de clase a las escaleras");
         }
 
         Indicacion primeraIndicacion = this.indicaciones.get(0);

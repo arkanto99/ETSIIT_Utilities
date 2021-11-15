@@ -21,10 +21,8 @@
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".ActivityQRreader"
-            android:parentActivityName=".ActivitySelectRoute" />
-        <activity
             android:name=".ActivitySelectRoute"
+            android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityComedor"
@@ -42,6 +40,7 @@
             android:parentActivityName=".ActivityHorarios" />
         <activity
             android:name=".ActivityMap"
+            android:screenOrientation="portrait"
             android:parentActivityName=".ActivitySelectRoute" />
         <activity
             android:name=".MainActivity"
