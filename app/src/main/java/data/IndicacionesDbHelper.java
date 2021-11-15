@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class IndicacionesDbHelper extends SQLiteOpenHelper {
 
-    public static final int DATABASE_VERSION = 4;
+    public static final int DATABASE_VERSION = 5;
     public static final String DATABASE_NAME = "BaseDatos.db";
 
     public IndicacionesDbHelper(Context context) {
@@ -128,7 +128,9 @@ public class IndicacionesDbHelper extends SQLiteOpenHelper {
         nuevaIndicacion(db,new Indicacion("Banho_Clase","banho_clase28","Camina recto",1,28));
         nuevaIndicacion(db,new Indicacion("Banho_Clase","banho_clase29","Camina recto",1,29));
         nuevaIndicacion(db,new Indicacion("Banho_Clase","banho_clase30","Camina recto",1,30));
-        //FALTA FOTO FIN DE RUTA
+        nuevaIndicacion(db,new Indicacion("Banho_Clase","banho_clase31","Camina recto",1,31));
+        nuevaIndicacion(db,new Indicacion("Banho_Clase","banho_clase32","Gira a la derecha",1,32));
+        nuevaIndicacion(db,new Indicacion("Banho_Clase","aula_3_3","Llegaste a tu destino",1,33));
 
         //RUTA: CLASE-ESCALERAS_EXTERIORES
         nuevaIndicacion(db,new Indicacion("Clase_EscalerasExteriores","salida_clase1","Sal de la clase",2,1));

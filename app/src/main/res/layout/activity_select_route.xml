@@ -46,7 +46,7 @@
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/escaleras_exteriores"
-        app:srcCompat="@drawable/banho_clase20" />
+        app:srcCompat="@drawable/aula_3_3" />
 
     <ImageButton
         android:id="@+id/escaleras_exteriores"
