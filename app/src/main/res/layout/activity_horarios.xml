@@ -23,7 +23,7 @@
             android:id="@+id/tituloFotoParking3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="25dp"
             android:fontFamily="sans-serif-black"
             android:text="Escanea un nombre de aula"
             android:textColor="@color/white"
