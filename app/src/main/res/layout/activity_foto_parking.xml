@@ -53,8 +53,8 @@
 
         <ImageView
             android:id="@+id/imageParking"
-            android:layout_width="209dp"
-            android:layout_height="203dp"
+            android:layout_width="368dp"
+            android:layout_height="402dp"
             tools:layout_editor_absoluteX="117dp"
             tools:layout_editor_absoluteY="163dp"
             tools:srcCompat="@tools:sample/avatars" />

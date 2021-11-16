@@ -29,6 +29,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityComedor"
+            android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityParking"
@@ -36,9 +37,11 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityHorarios"
+            android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityMostrarAsignatura"
+            android:screenOrientation="portrait"
             android:parentActivityName=".ActivityHorarios" />
         <activity
             android:name=".ActivityMap"
