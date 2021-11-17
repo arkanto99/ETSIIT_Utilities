@@ -38,9 +38,9 @@ public class ActivityMostrarAsignatura extends AppCompatActivity
     private ActivityMostrarAsignaturaBinding binding;
     PLSphericalPanorama panorama = new PLSphericalPanorama();
 
-    float azimuth_degrees = 0.0f;
-    float pitch_degrees = 0.0f;
-    float roll_degrees = 0.0f;
+    float azimuthDegrees = 0.0f;
+    float pitchDegrees = 0.0f;
+    float rollDegrees = 0.0f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,8 +68,8 @@ public class ActivityMostrarAsignatura extends AppCompatActivity
         plManager.setInertiaEnabled(false);
         plManager.setZoomEnabled(false);
         plManager.setAcceleratedTouchScrollingEnabled(false);
-        PLRotation rotation_inicial = new PLRotation(pitch_degrees, azimuth_degrees, roll_degrees);
-        panorama.getCamera().setInitialLookAt(rotation_inicial);
+        PLRotation rotationInicial = new PLRotation(pitchDegrees, azimuthDegrees, rollDegrees);
+        panorama.getCamera().setInitialLookAt(rotationInicial);
 
         panorama.setImage(new PLImage(PLUtils.getBitmap(this, R.drawable.img_fondo_pasillo_360), false));
         plManager.setPanorama(panorama);
@@ -163,11 +163,11 @@ public class ActivityMostrarAsignatura extends AppCompatActivity
         float pitch = orientationValues[1];
         float roll = orientationValues[2];
 
-        azimuth_degrees = (float) Math.toDegrees(azimuth);
-        pitch_degrees = (float) Math.toDegrees(pitch);
-        roll_degrees = (float) Math.toDegrees(roll);
+        azimuthDegrees = (float) Math.toDegrees(azimuth);
+        pitchDegrees = (float) Math.toDegrees(pitch);
+        rollDegrees = (float) Math.toDegrees(roll);
 
-        PLRotation rotation = new PLRotation(pitch_degrees, azimuth_degrees, roll_degrees);
+        PLRotation rotation = new PLRotation(pitchDegrees, azimuthDegrees, rollDegrees);
         panorama.getCamera().lookAt(plManager, rotation);
     }
 
