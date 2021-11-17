@@ -25,7 +25,7 @@ public class ActivityHorarios extends AppCompatActivity {
     private SurfaceView mCameraView;
     private TextView mTextoAulaDetectada;
 
-    private boolean aula_encontrada = false;
+    private boolean aulaEncontrada = false;
     private static final int CAMERA_REQUEST = 1888;
 
     @Override
@@ -36,19 +36,19 @@ public class ActivityHorarios extends AppCompatActivity {
         mCameraView = findViewById(R.id.camara_source);
         mTextoAulaDetectada = findViewById(R.id.texto_aula_detectada);
 
-        iniciar();
+        detectarTexto();
     }
 
     @Override
     public void onResume(){
         super.onResume();
 
-        aula_encontrada = false;
-        iniciar();
+        aulaEncontrada = false;
+        detectarTexto();
     }
 
 
-    private void iniciar() {
+    private void detectarTexto() {
         final com.google.android.gms.vision.text.TextRecognizer textRecognizer = new com.google.android.gms.vision.text.TextRecognizer.Builder(getApplicationContext()).build();
 
         if (!textRecognizer.isOperational()) {
@@ -107,11 +107,11 @@ public class ActivityHorarios extends AppCompatActivity {
                         public void run() {
                             StringBuilder stringBuilder = new StringBuilder();
 
-                            for(int i = 0; i<items.size() && !aula_encontrada; i++){
+                            for(int i = 0; i<items.size() && !aulaEncontrada; i++){
                                 if (items.valueAt(i).getValue().equals("Aula 3.3")) {
                                     TextBlock itemAula = items.valueAt(i);
                                     stringBuilder.append(itemAula.getValue());
-                                    aula_encontrada = true;
+                                    aulaEncontrada = true;
 
                                     Intent intent = new Intent(ActivityHorarios.this, ActivityMostrarAsignatura.class);
                                     startActivity(intent);

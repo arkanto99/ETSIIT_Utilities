@@ -17,6 +17,12 @@ import java.util.ArrayList;
 public class ActivityTouchParking extends AppCompatActivity {
     private Context context;
 
+    // Almacena los gestos
+    GestureLibrary gesturelib;
+
+    // Vista para gestos
+    GestureOverlayView gestureview;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +31,7 @@ public class ActivityTouchParking extends AppCompatActivity {
         context = this;
 
         // Almacena los gestos
-        GestureLibrary gesturelib = GestureLibraries.fromRawResource(this, R.raw.gestures);
+        gesturelib = GestureLibraries.fromRawResource(this, R.raw.gestures);
 
         if (!gesturelib.load()) {
             Log.w("GestureActivity", "Error en la carga de Gestos");
@@ -33,7 +39,7 @@ public class ActivityTouchParking extends AppCompatActivity {
         }
 
         // Vista para gestos
-        GestureOverlayView gestureview = (GestureOverlayView) findViewById(R.id.gesture_view);
+        gestureview = (GestureOverlayView) findViewById(R.id.gesture_view);
 
         // Añade el Listener
         gestureview.addOnGesturePerformedListener(new GestureOverlayView.OnGesturePerformedListener() {
