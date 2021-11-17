@@ -66,7 +66,7 @@ public class ActivityMostrarAsignatura extends AppCompatActivity
         plManager.onCreate();
         plManager.setAccelerometerEnabled(false);
         plManager.setInertiaEnabled(false);
-        plManager.setZoomEnabled(false);
+        plManager.setZoomEnabled(true);
         plManager.setAcceleratedTouchScrollingEnabled(false);
         PLRotation rotationInicial = new PLRotation(pitchDegrees, azimuthDegrees, rollDegrees);
         panorama.getCamera().setInitialLookAt(rotationInicial);
