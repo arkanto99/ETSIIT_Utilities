@@ -123,23 +123,24 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_bottom_left"
+                    android:id="@+id/button_chatbot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/boton_redondeado"
+                    android:onClick="openChatbot"
                     android:fontFamily="sans-serif-black"
-                    android:text="Button"
+                    android:text="Chatbot"
                     android:textColor="@color/white" />
 
                 <Button
-                    android:id="@+id/button_bottom_right"
+                    android:id="@+id/button_voz"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/boton_redondeado"
                     android:fontFamily="sans-serif-black"
-                    android:text="Button"
+                    android:text="Voz"
                     android:textColor="@color/white" />
 
             </TableRow>

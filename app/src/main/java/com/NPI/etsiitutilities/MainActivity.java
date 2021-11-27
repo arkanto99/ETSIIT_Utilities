@@ -11,6 +11,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.tyagiabhinav.dialogflowchatlibrary.Chatbot;
+import com.tyagiabhinav.dialogflowchatlibrary.ChatbotActivity;
+import com.tyagiabhinav.dialogflowchatlibrary.ChatbotSettings;
+import com.tyagiabhinav.dialogflowchatlibrary.DialogflowCredentials;
+
+import java.util.UUID;
+
 import data.IndicacionesDbHelper;
 
 public class MainActivity extends AppCompatActivity {
@@ -74,6 +81,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void goParking(View view) {
         Intent intent = new Intent(this, ActivityParking.class);
+        startActivity(intent);
+    }
+
+    public void openChatbot(View view) {
+        // provide your Dialogflow's Google Credential JSON saved under RAW folder in resources
+        DialogflowCredentials.getInstance().setInputStream(getResources().openRawResource(R.raw.test_agent_credentials));
+
+        ChatbotSettings.getInstance().setChatbot( new Chatbot.ChatbotBuilder().build());
+        Intent intent = new Intent(this, ChatbotActivity.class);
+        Bundle bundle = new Bundle();
+
+        // provide a UUID for your session with the Dialogflow agent
+        bundle.putString(ChatbotActivity.SESSION_ID, UUID.randomUUID().toString());
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
+        intent.putExtras(bundle);
         startActivity(intent);
     }
 }
