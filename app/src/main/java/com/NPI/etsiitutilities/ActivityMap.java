@@ -17,6 +17,8 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -43,6 +45,9 @@ public class ActivityMap extends AppCompatActivity implements SensorEventListene
     private Podometro podometro;
     public static float mStepCounter = 0;
 
+    //Lectura de indicaciones
+    private TextToSpeech textToSpeechEngine;
+    private String textoAnterior = "";
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -72,7 +77,16 @@ public class ActivityMap extends AppCompatActivity implements SensorEventListene
 
         podometro = new Podometro(mSensorAcc);
 
-        //////////////////////////////////
+        ////////////////////////////////////////
+        //Inicializacion del textSpeech
+        textToSpeechEngine = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status != TextToSpeech.SUCCESS) {
+                    Log.e("TTS", "Inicio de la síntesis fallido");
+                }
+            }
+        });
 
         //Obtenemos las referencias a los objetos a modificar en la pantalla
         titleIndicacion = findViewById(R.id.titleIndicacion);
@@ -128,8 +142,12 @@ public class ActivityMap extends AppCompatActivity implements SensorEventListene
         int drawableResourceId = this.getResources().getIdentifier(primeraIndicacion.getImagen(), "drawable", this.getPackageName());
         imgMapa.setImageResource(drawableResourceId);
         //Escribimos la primera indicacion
-        textoIndicacion.setText(primeraIndicacion.getTextoIndicacion());
-    }
+        String texto = primeraIndicacion.getTextoIndicacion();
+        textoIndicacion.setText(texto);
+        //Leemos la indicacion
+        textToSpeechEngine.speak(texto, TextToSpeech.QUEUE_FLUSH, null, "tts1");
+        this.textoAnterior = texto;
+        }
 
 
 
@@ -147,7 +165,13 @@ public class ActivityMap extends AppCompatActivity implements SensorEventListene
             int drawableResourceId = this.getResources().getIdentifier(indicacionActual.getImagen(), "drawable", this.getPackageName());
             imgMapa.setImageResource(drawableResourceId);
             //Actualizamos el texto
-            textoIndicacion.setText(indicacionActual.getTextoIndicacion());
+            String texto = indicacionActual.getTextoIndicacion();
+            textoIndicacion.setText(texto);
+            //Leemos la indicacion si el texto es diferente o si no se está leyendo nada
+            if(!textoAnterior.equals(texto) || textToSpeechEngine.isSpeaking()==false) {
+                textToSpeechEngine.speak(texto, TextToSpeech.QUEUE_FLUSH, null, "tts1");
+            }
+            this.textoAnterior = texto;
             //Reseteamos el contador de pasos
             mStepCounter = 0;
             podometro.setStepCounter(0);
