@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         // provide your Dialogflow's Google Credential JSON saved under RAW folder in resources
         DialogflowCredentials.getInstance().setInputStream(getResources().openRawResource(R.raw.test_agent_credentials));
 
-        ChatbotSettings.getInstance().setChatbot( new Chatbot.ChatbotBuilder().build());
+        ChatbotSettings.getInstance().setChatbot( new Chatbot.ChatbotBuilder().setDoAutoWelcome(true).setShowMic(true) .build());
         Intent intent = new Intent(this, ChatbotActivity.class);
         Bundle bundle = new Bundle();
 
