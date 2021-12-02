@@ -49,6 +49,7 @@
             android:parentActivityName=".ActivitySelectRoute" />
         <activity android:name="com.tyagiabhinav.dialogflowchatlibrary.ChatbotActivity"
             android:launchMode="singleTask"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".MainActivity"

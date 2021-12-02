@@ -16,9 +16,9 @@
 
     Default Colours
     <color name="userAvatarBG">#666666</color>
-    <color name="chatPrimary">#CC0000</color>
-    <color name="chatPrimaryFocus">#DD0000</color>
-    <color name="chatPrimaryPressed">#A60000</color>
+    <color name="chatPrimary">#FF5031</color>
+    <color name="chatPrimaryFocus">#FF5031</color>
+    <color name="chatPrimaryPressed">#FF5031</color>
     <color name="chatPrimaryDisabled">#66cc0000</color>
     <color name="chatBGnText">#FFFFFF</color>
     <color name="chatSecondary">#FFFFFF</color>
