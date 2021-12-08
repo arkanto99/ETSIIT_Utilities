@@ -124,11 +124,11 @@ public class MainActivity extends AppCompatActivity {
 
             if ( matches.get(0).contains("mapa") ) {
                 startActivity(new Intent(this, ActivityComedor.class));
-            } else if ( matches.get(0).equals("horarios") ){
+            } else if ( matches.get(0).contains("horario") ){
                 startActivity(new Intent(this, ActivityHorarios.class));
-            } else if ( matches.get(0).equals("parking") ){
+            } else if ( matches.get(0).contains("parking") ){
                 startActivity(new Intent(this, ActivityParking.class));
-            } else if ( matches.get(0).equals("comedor") ){
+            } else if ( matches.get(0).contains("comedor") ){
                 startActivity(new Intent(this, ActivityComedor.class));
             } else{
                 Toast.makeText(getApplicationContext(), "No hay ninguna pantalla " +
