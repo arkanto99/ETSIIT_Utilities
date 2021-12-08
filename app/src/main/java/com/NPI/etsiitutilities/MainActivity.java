@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_CODE = 1234;
     Button speakButton;
 
+    public static final String RUTA = "com.NPI.etsiitutilities.MESSAGE";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         List<ResolveInfo> activities = pm.queryIntentActivities(new Intent(
                 RecognizerIntent.ACTION_RECOGNIZE_SPEECH), 0);
         if (activities.size() == 0) {
-            speakButton.setEnabled(false);
+            //speakButton.setEnabled(false);
             Toast.makeText(getApplicationContext(), "Recognizer Not Found",
                     1000).show();
         }
@@ -124,7 +126,19 @@ public class MainActivity extends AppCompatActivity {
 
             if ( matches.get(0).contains("mapa") ) {
                 startActivity(new Intent(this, ActivitySelectRoute.class));
-            } else if ( matches.get(0).contains("horario") ){
+            } else if ( matches.get(0).contains("aula") ){
+                Intent intent = new Intent(this, ActivityMap.class);
+                intent.putExtra(RUTA, "Banho_Clase");
+                startActivity(intent);
+            }else if ( matches.get(0).contains("baño") ){
+                Intent intent = new Intent(this, ActivityMap.class);
+                intent.putExtra(RUTA, "Clase_Banho");
+                startActivity(intent);
+            }else if ( matches.get(0).contains("escaleras") ){
+                Intent intent = new Intent(this, ActivityMap.class);
+                intent.putExtra(RUTA, "Clase_EscalerasExteriores");
+                startActivity(intent);
+            }else if ( matches.get(0).contains("horario") ){
                 startActivity(new Intent(this, ActivityHorarios.class));
             } else if ( matches.get(0).contains("parking") ){
                 startActivity(new Intent(this, ActivityParking.class));
