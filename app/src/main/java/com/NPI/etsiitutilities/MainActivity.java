@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             if ( matches.get(0).contains("mapa") ) {
-                startActivity(new Intent(this, ActivityComedor.class));
+                startActivity(new Intent(this, ActivitySelectRoute.class));
             } else if ( matches.get(0).contains("horario") ){
                 startActivity(new Intent(this, ActivityHorarios.class));
             } else if ( matches.get(0).contains("parking") ){
