@@ -71,13 +71,29 @@ public class ActivityTest extends AppCompatActivity {
         startActivityForResult(intent, REQUEST_CODE);
     }
 
+    @SuppressLint("WrongConstant")
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
-            ArrayList<String> matches = data
-                    .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-            resultList.setAdapter(new ArrayAdapter<String>(this,
-                    android.R.layout.simple_list_item_1, matches));
+
+            ArrayList<String> matches = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+
+
+            // resultList.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, matches));
+
+
+            if ( matches.get(0).contains("mapa") ) {
+                startActivity(new Intent(this, ActivityComedor.class));
+            } else if ( matches.get(0).equals("horarios") ){
+                startActivity(new Intent(this, ActivityHorarios.class));
+            } else if ( matches.get(0).equals("parking") ){
+                startActivity(new Intent(this, ActivityParking.class));
+            } else if ( matches.get(0).equals("comedor") ){
+                startActivity(new Intent(this, ActivityComedor.class));
+            } else{
+                Toast.makeText(getApplicationContext(), "No hay ninguna pantalla relacionada con: " + matches.get(0) + " - Vuelve a intentarlo",1000).show();
+            }
+
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
