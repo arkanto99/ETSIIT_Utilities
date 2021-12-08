@@ -16,6 +16,10 @@
 
 
         <activity
+            android:name=".ActivityTest"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
             android:name=".ActivityTouchParking"
             android:screenOrientation="portrait"
             android:exported="false" />

@@ -167,6 +167,7 @@
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/boton_redondeado"
                     android:fontFamily="sans-serif-black"
+                    android:onClick="goTest"
                     android:text="Voz"
                     android:textColor="@color/white" />
 
@@ -178,6 +179,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="#FFFFFF" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

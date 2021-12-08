@@ -83,6 +83,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ActivityParking.class);
         startActivity(intent);
     }
+    public void goTest(View view) {
+        Intent intent = new Intent(this, ActivityTest.class);
+        startActivity(intent);
+    }
 
     public void openChatbot(View view) {
         // provide your Dialogflow's Google Credential JSON saved under RAW folder in resources
