@@ -28,6 +28,8 @@ public class ActivityHorarios extends AppCompatActivity {
     private boolean aulaEncontrada = false;
     private static final int CAMERA_REQUEST = 1888;
 
+    public static final String AULA = "com.NPI.etsiitutilities.MESSAGE";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -108,12 +110,21 @@ public class ActivityHorarios extends AppCompatActivity {
                             StringBuilder stringBuilder = new StringBuilder();
 
                             for(int i = 0; i<items.size() && !aulaEncontrada; i++){
-                                if (items.valueAt(i).getValue().equals("Aula 3.3")) {
+                                if (items.valueAt(i).getValue().toUpperCase().equals("AULA 3.3")) {
                                     TextBlock itemAula = items.valueAt(i);
                                     stringBuilder.append(itemAula.getValue());
                                     aulaEncontrada = true;
 
                                     Intent intent = new Intent(ActivityHorarios.this, ActivityMostrarAsignatura.class);
+                                    intent.putExtra(AULA, "Aula 3.3");
+                                    startActivity(intent);
+                                } else if (items.valueAt(i).getValue().toUpperCase().equals("AULA 1.5")) {
+                                    TextBlock itemAula = items.valueAt(i);
+                                    stringBuilder.append(itemAula.getValue());
+                                    aulaEncontrada = true;
+
+                                    Intent intent = new Intent(ActivityHorarios.this, ActivityMostrarAsignatura.class);
+                                    intent.putExtra(AULA, "Aula 1.5");
                                     startActivity(intent);
                                 }
                             }

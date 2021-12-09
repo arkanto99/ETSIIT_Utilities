@@ -3,6 +3,7 @@ package com.NPI.etsiitutilities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -71,7 +72,13 @@ public class ActivityMostrarAsignatura extends AppCompatActivity
         PLRotation rotationInicial = new PLRotation(pitchDegrees, azimuthDegrees, rollDegrees);
         panorama.getCamera().setInitialLookAt(rotationInicial);
 
-        panorama.setImage(new PLImage(PLUtils.getBitmap(this, R.drawable.img_fondo_pasillo_360), false));
+        Intent intent = getIntent();
+        String aula = intent.getStringExtra(ActivityHorarios.AULA);
+        if (aula.equals("Aula 3.3")){
+            panorama.setImage(new PLImage(PLUtils.getBitmap(this, R.drawable.img_fondo_pasillo_360_aula_3_3), false));
+        } else if (aula.equals("Aula 1.5")){
+            panorama.setImage(new PLImage(PLUtils.getBitmap(this, R.drawable.img_fondo_pasillo_360_aula_1_5), false));
+        }
         plManager.setPanorama(panorama);
     }
 

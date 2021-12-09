@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
     Button speakButton;
 
     public static final String RUTA = "com.NPI.etsiitutilities.MESSAGE";
+    public static final String AULA = "com.NPI.etsiitutilities.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -160,6 +161,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             } else if ( matches.get(0).contains("comedor") ){
                 startActivity(new Intent(this, ActivityComedor.class));
+            } else if ( matches.get(0).contains("3.3") || matches.get(0).contains("33") ){
+                Intent intent = new Intent(this, ActivityMostrarAsignatura.class);
+                intent.putExtra(AULA, "Aula 3.3");
+                startActivity(intent);
+            } else if ( matches.get(0).contains("1.5") || matches.get(0).contains("15") ){
+                Intent intent = new Intent(this, ActivityMostrarAsignatura.class);
+                intent.putExtra(AULA, "Aula 1.5");
+                startActivity(intent);
             } else{
                 Toast.makeText(getApplicationContext(), "No hay ninguna pantalla " +
                 "relacionada con: " + matches.get(0) + " - Vuelve a intentarlo",1000).show();
