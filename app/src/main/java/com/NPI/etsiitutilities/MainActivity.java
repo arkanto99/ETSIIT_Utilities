@@ -130,18 +130,34 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, ActivityMap.class);
                 intent.putExtra(RUTA, "Banho_Clase");
                 startActivity(intent);
-            }else if ( matches.get(0).contains("baño") ){
+            } else if ( matches.get(0).contains("baño") ){
                 Intent intent = new Intent(this, ActivityMap.class);
                 intent.putExtra(RUTA, "Clase_Banho");
                 startActivity(intent);
-            }else if ( matches.get(0).contains("escaleras") ){
+            } else if ( matches.get(0).contains("escaleras") ){
                 Intent intent = new Intent(this, ActivityMap.class);
                 intent.putExtra(RUTA, "Clase_EscalerasExteriores");
                 startActivity(intent);
-            }else if ( matches.get(0).contains("horario") ){
+            } else if ( matches.get(0).contains("horario") ){
                 startActivity(new Intent(this, ActivityHorarios.class));
             } else if ( matches.get(0).contains("parking") ){
                 startActivity(new Intent(this, ActivityParking.class));
+            } else if ( matches.get(0).contains("bicis") || matches.get(0).contains("bicicletas") ){
+                Intent intent = new Intent(this, ActivityFotoParking.class);
+                intent.putExtra("opcion", 'B');
+                startActivity(intent);
+            } else if ( matches.get(0).contains("patinetes") ){
+                Intent intent = new Intent(this, ActivityFotoParking.class);
+                intent.putExtra("opcion", 'P');
+                startActivity(intent);
+            } else if ( matches.get(0).contains("coches") || matches.get(0).contains("automoviles") ){
+                Intent intent = new Intent(this, ActivityFotoParking.class);
+                intent.putExtra("opcion", 'C');
+                startActivity(intent);
+            } else if ( matches.get(0).contains("motos") || matches.get(0).contains("motocicletas") ){
+                Intent intent = new Intent(this, ActivityFotoParking.class);
+                intent.putExtra("opcion", 'M');
+                startActivity(intent);
             } else if ( matches.get(0).contains("comedor") ){
                 startActivity(new Intent(this, ActivityComedor.class));
             } else{
