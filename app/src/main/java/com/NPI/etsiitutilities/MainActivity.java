@@ -9,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.tyagiabhinav.dialogflowchatlibrary.Chatbot;
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Variables para el speech-to-text
     private static final int REQUEST_CODE = 1234;
-    Button speakButton;
+    ImageButton speakButton;
 
     public static final String RUTA = "com.NPI.etsiitutilities.MESSAGE";
     public static final String AULA = "com.NPI.etsiitutilities.MESSAGE";
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Elementos de speech-to-text -------------------------------------------------------------
-        speakButton = (Button) findViewById(R.id.speakButton);
+        speakButton = (ImageButton) findViewById(R.id.speakButton);
 
         // Deshabilitamos el botón si el servicio de reconocimiento de voz no está disponible.
         PackageManager pm = getPackageManager();

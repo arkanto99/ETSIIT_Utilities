@@ -160,16 +160,16 @@
                     android:text="Chatbot"
                     android:textColor="@color/white" />
 
-                <Button
+                <ImageButton
                     android:id="@+id/speakButton"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/boton_redondeado"
                     android:fontFamily="sans-serif-black"
                     android:onClick="goTest"
-                    android:text="Voz"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    app:srcCompat="@drawable/icono_microfono" />
 
             </TableRow>
         </LinearLayout>
