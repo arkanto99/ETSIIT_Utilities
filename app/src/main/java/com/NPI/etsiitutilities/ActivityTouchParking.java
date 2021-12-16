@@ -10,6 +10,7 @@ import android.gesture.GestureLibrary;
 import android.gesture.GestureOverlayView;
 import android.gesture.Prediction;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -23,12 +24,27 @@ public class ActivityTouchParking extends AppCompatActivity {
     // Vista para gestos
     GestureOverlayView gestureview;
 
+    //Lectura de indicaciones
+    private TextToSpeech textToSpeechEngine;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_touch_parking);
 
         context = this;
+
+        //Inicializacion del textSpeech
+        textToSpeechEngine = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status != TextToSpeech.SUCCESS) {
+                    Log.e("TTS", "Inicio de la síntesis fallido");
+                }
+            }
+        });
+
+        textToSpeechEngine.speak(getString(R.string.instrucciones_parking), TextToSpeech.QUEUE_FLUSH, null, "tts1");
 
         // Almacena los gestos
         gesturelib = GestureLibraries.fromRawResource(this, R.raw.gestures);

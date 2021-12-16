@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,6 +13,9 @@ public class ActivityFotoParking extends AppCompatActivity {
     private TextView titulo, texto;
     private ImageView imgParking;
     private int drawableResourceId;
+
+    //Lectura de indicaciones
+    private TextToSpeech textToSpeechEngine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +25,16 @@ public class ActivityFotoParking extends AppCompatActivity {
         titulo = findViewById(R.id.tituloFotoParking);
         texto = findViewById(R.id.textoFotoParking);
         imgParking = findViewById(R.id.imageParking);
+
+        //Inicializacion del textSpeech
+        textToSpeechEngine = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status != TextToSpeech.SUCCESS) {
+                    Log.e("TTS", "Inicio de la síntesis fallido");
+                }
+            }
+        });
 
         char opcion = getIntent().getCharExtra("opcion", 'N');
 
@@ -50,5 +65,11 @@ public class ActivityFotoParking extends AppCompatActivity {
                 break;
         }
         imgParking.setImageResource(drawableResourceId);
+
+        String textotts = "Está viendo el "
+                + titulo.getText()
+                + ". Ahora mismo hay "
+                + texto.getText();
+        textToSpeechEngine.speak(textotts, TextToSpeech.QUEUE_FLUSH, null, "tts1");
     }
 }
