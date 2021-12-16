@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -59,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
     public static final String RUTA = "com.NPI.etsiitutilities.MESSAGE";
     public static final String AULA = "com.NPI.etsiitutilities.MESSAGE";
 
+    //Lectura de indicaciones
+    public static TextToSpeech textToSpeechEngine;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,6 +77,16 @@ public class MainActivity extends AppCompatActivity {
                     CAMERA_REQUEST);
             return;
         }
+
+        //Inicializacion del textSpeech
+        textToSpeechEngine = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status != TextToSpeech.SUCCESS) {
+                    Log.e("TTS", "Inicio de la síntesis fallido");
+                }
+            }
+        });
 
         // Detectar agitación
         sm = (SensorManager) getSystemService(SENSOR_SERVICE);

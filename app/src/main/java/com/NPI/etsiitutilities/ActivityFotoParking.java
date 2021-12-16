@@ -8,6 +8,7 @@ import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ActivityFotoParking extends AppCompatActivity {
     private TextView titulo, texto;
@@ -26,15 +27,7 @@ public class ActivityFotoParking extends AppCompatActivity {
         texto = findViewById(R.id.textoFotoParking);
         imgParking = findViewById(R.id.imageParking);
 
-        //Inicializacion del textSpeech
-        textToSpeechEngine = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                if (status != TextToSpeech.SUCCESS) {
-                    Log.e("TTS", "Inicio de la síntesis fallido");
-                }
-            }
-        });
+        textToSpeechEngine = MainActivity.textToSpeechEngine;
 
         char opcion = getIntent().getCharExtra("opcion", 'N');
 
@@ -70,6 +63,7 @@ public class ActivityFotoParking extends AppCompatActivity {
                 + titulo.getText()
                 + ". Ahora mismo hay "
                 + texto.getText();
+
         textToSpeechEngine.speak(textotts, TextToSpeech.QUEUE_FLUSH, null, "tts1");
     }
 }

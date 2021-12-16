@@ -79,14 +79,7 @@ public class ActivityMap extends AppCompatActivity implements SensorEventListene
 
         ////////////////////////////////////////
         //Inicializacion del textSpeech
-        textToSpeechEngine = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                if (status != TextToSpeech.SUCCESS) {
-                    Log.e("TTS", "Inicio de la síntesis fallido");
-                }
-            }
-        });
+        textToSpeechEngine = MainActivity.textToSpeechEngine;
 
         //Obtenemos las referencias a los objetos a modificar en la pantalla
         titleIndicacion = findViewById(R.id.titleIndicacion);

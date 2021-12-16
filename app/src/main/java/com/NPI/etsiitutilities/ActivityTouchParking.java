@@ -12,6 +12,7 @@ import android.gesture.Prediction;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -34,16 +35,7 @@ public class ActivityTouchParking extends AppCompatActivity {
 
         context = this;
 
-        //Inicializacion del textSpeech
-        textToSpeechEngine = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                if (status != TextToSpeech.SUCCESS) {
-                    Log.e("TTS", "Inicio de la síntesis fallido");
-                }
-            }
-        });
-
+        textToSpeechEngine = MainActivity.textToSpeechEngine;
         textToSpeechEngine.speak(getString(R.string.instrucciones_parking), TextToSpeech.QUEUE_FLUSH, null, "tts1");
 
         // Almacena los gestos
