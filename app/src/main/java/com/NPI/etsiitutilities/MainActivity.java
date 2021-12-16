@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         speakButton = (ImageButton) findViewById(R.id.speakButton);
 
         // Deshabilitamos el botón si el servicio de reconocimiento de voz no está disponible.
-        PackageManager pm = getPackageManager();
+        /*PackageManager pm = getPackageManager();
         List<ResolveInfo> activities = pm.queryIntentActivities(new Intent(
                 RecognizerIntent.ACTION_RECOGNIZE_SPEECH), 0);
         if (activities.size() == 0) {
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Recognizer Not Found",
                     1000).show();
         }
-
+*/
         // Si se está disponible, lo activamos en la pulsación del botón.
         speakButton.setOnClickListener(new OnClickListener() {
             @Override
