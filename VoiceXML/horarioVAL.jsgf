@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+grammar horarioVAL;
+
+public <horarioVAL> = diez en punt | diez i mitlla | 
+onze en punt | once i mitlla| 
+dotze en punt | doce i mitlla | 
+una en punt | una i mitlla | 
+dos en punt | dos i mitlla ;

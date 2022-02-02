@@ -1,0 +1,175 @@
+export default (request, response) => {
+    let bodyString = request.body;
+    var entradaDialogFlow = JSON.parse(bodyString);
+    console.log("Entrada DialogFlow: "+entradaDialogFlow);
+    var servicio=entradaDialogFlow['queryResult']['parameters'].servicio;
+    var aparcamientos=entradaDialogFlow['queryResult']['parameters'].aparcamientos;
+    var fecha = new Date (entradaDialogFlow['queryResult']['parameters'].fecha);
+    var plato=entradaDialogFlow['queryResult']['parameters'].plato;
+    
+    // Horarios de los servicios
+    var horario="No se conoce el servicio";
+    
+    if (servicio ==="comedor"){
+        horario="de 13:30 a 15:00";
+    }else if (servicio ==="copistería"){
+        horario="de 08:30 a 19:30";
+    }else if (servicio ==="cafetería"){
+        horario="de 08:30 a 17:00";
+    }else if (servicio ==="biblioteca"){
+        horario="de 08:30 a 20:30";
+    }else if (servicio ==="secretaría"){
+        horario="de 09:00 a 13:00";
+    }else if (servicio ==="facultad"){
+        horario="de 07:30 a 22:30";
+    }else{
+        servicio = null;
+    }
+
+    let respuestaHorario = horario;
+
+    if (servicio ==="comedor"){
+        respuestaHorario = "El horario del "+servicio+" es "+horario;
+    }else{
+        respuestaHorario = "El horario de la "+servicio+" es "+horario;
+    }
+    
+    // Aparcamientos
+    var numAparcCoches = 1;
+    var numAparcMotos = 15;
+    var numAparcPatinetes = 9;
+    var numAparcBicicletas = 0;
+    
+    var numRespuesta;
+    
+    if (aparcamientos ==="coche"){
+        numRespuesta = numAparcCoches;
+    }else if (aparcamientos ==="moto"){
+        numRespuesta = numAparcMotos;
+    }else if (aparcamientos ==="patinete"){
+        numRespuesta = numAparcPatinetes;
+    }else if (aparcamientos ==="bicicleta"){
+        numRespuesta = numAparcBicicletas;
+    }else{
+        aparcamientos = null;
+    }
+    
+    let respuestaAparcamientos = "Hay "+numRespuesta+" plazas disponibles de "+aparcamientos;
+    
+    if (numRespuesta ===1){
+        respuestaAparcamientos = "Hay solamente "+numRespuesta+" plaza disponible de "+aparcamientos;
+    } else if (numRespuesta ===0){
+        respuestaAparcamientos = "No hay ninguna plaza disponile de "+aparcamientos+" en este momento. Lo lamentamos";
+    }
+    
+    // Menu y platos de cada día
+    var diaSemana = fecha.getDay();
+    if (diaSemana ===1){
+        diaSemana = "lunes";
+    } else if (diaSemana ===2){
+        diaSemana = "martes";
+    } else if (diaSemana ===3){
+        diaSemana = "miércoles";
+    } else if (diaSemana ===4){
+        diaSemana = "jueves";
+    } else if (diaSemana ===5){
+        diaSemana = "viernes";
+    } else if (diaSemana ===6 || diaSemana ===0){
+        diaSemana = "cerrado";
+    } else {
+        fecha = null;
+    }
+    
+    let respuestaMenu = "Lo sentimos. Ese día está cerrado el comedor. Éste abre de lunes a viernes";
+    
+    if (diaSemana ==="lunes"){
+        respuestaMenu = "El "+diaSemana+" hay el siguiente menú:    *Primero->Fideuá    *Segundo->Medallón de lomo  *Postre->Piña";
+        
+        if (plato ==="primero"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Fideuá";
+        } else if (plato ==="segundo"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Medallón de lomo";
+        } else if (plato ==="postre"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Piña";
+        } else {
+            plato = null;
+        }
+        
+    } else if (diaSemana ==="martes"){
+        respuestaMenu = "El "+diaSemana+" hay el siguiente menú:    *Primero->Pizza de jamón cocido y queso    *Segundo->Merluza a la andaluza  *Postre->Naranja";
+        
+        if (plato ==="primero"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Pizza de jamón cocido y queso";
+        } else if (plato ==="segundo"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Merluza a la andaluza";
+        } else if (plato ==="postre"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Naranja";
+        } else {
+            plato = null;
+        }
+        
+    } else if (diaSemana ==="miércoles"){
+        respuestaMenu = "El "+diaSemana+" hay el siguiente menú:    *Primero->Judías salteadas con queso    *Segundo->Fritada de carne de cerdo  *Postre->Manzana";
+        
+        if (plato ==="primero"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Judías salteadas con queso";
+        } else if (plato ==="segundo"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Fritada de carne de cerdo";
+        } else if (plato ==="postre"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Manzana";
+        } else {
+            plato = null;
+        }
+        
+    } else if (diaSemana ==="jueves"){
+        respuestaMenu = "El "+diaSemana+" hay el siguiente menú:    *Primero->Sopa cuarto de hora    *Segundo->Plato alpujarreño  *Postre->Natillas";
+        
+        if (plato ==="primero"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Sopa cuarto de hora";
+        } else if (plato ==="segundo"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Plato alpujarreño";
+        } else if (plato ==="postre"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Natillas";
+        } else {
+            plato = null;
+        }
+        
+    } else if (diaSemana ==="viernes"){
+        respuestaMenu = "El "+diaSemana+" hay el siguiente menú:    *Primero->Lasaña    *Segundo->Pechuga de pollo a la parrilla  *Postre->Pera";
+        
+        if (plato ==="primero"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Lasaña";
+        } else if (plato ==="segundo"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Pechuga de pollo a la parrilla";
+        } else if (plato ==="postre"){
+            respuestaMenu = "El "+plato+" del "+diaSemana+" es Pera";
+        } else {
+            plato = null;
+        }
+        
+    }
+    
+    // Respuesta
+    let respuesta = "No tengo respuesta";
+    
+    if (servicio !== null){
+        respuesta = respuestaHorario;
+    }else if (aparcamientos !== null){
+        respuesta = respuestaAparcamientos;
+    }else if (fecha !== null){
+        respuesta = respuestaMenu;
+    }
+
+    // Set the status code - by default it would return 200
+    response.status = 200;
+
+    // Set the headers the way you like
+    response.headers['X-Custom-Header'] = 'CustomHeaderValue';
+    return request.json().then((body) => {
+    return response.send({ fulfillmentText: respuesta });
+    //return response.send({speech: "What's up cool developer :)"});
+
+}).catch((err) => {
+return response.send("Malformed JSON body.");
+});
+};

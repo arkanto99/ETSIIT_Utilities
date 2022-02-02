@@ -1,0 +1,75 @@
+{
+  "id": "43cffafa-b3b0-432d-9df7-532cb6d979a2",
+  "name": "ServicioHorario",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "ServicioElegido",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "a8972e9c-b31f-4aad-9a9d-648e9944b01d",
+          "name": "servicio",
+          "required": true,
+          "dataType": "@Servicios",
+          "value": "$servicio",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿De qué servicio deseas obtener información?"
+            },
+            {
+              "lang": "es",
+              "value": "¿En qué servicio estás interesado?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c7806d24-f09a-4092-9641-c9cb996b37b9",
+          "name": "location",
+          "required": false,
+          "dataType": "@sys.location",
+          "value": "$location",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

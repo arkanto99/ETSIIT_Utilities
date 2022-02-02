@@ -1,0 +1,151 @@
+[
+  {
+    "id": "a2d16c75-17aa-4de6-9d62-53e64a32d2e5",
+    "data": [
+      {
+        "text": "mañana",
+        "meta": "@sys.date",
+        "alias": "date",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "por la mañana",
+        "meta": "@sys.time",
+        "alias": "time",
+        "userDefined": true
+      },
+      {
+        "text": " iré en ",
+        "userDefined": false
+      },
+      {
+        "text": "coche",
+        "meta": "@Aparcamientos",
+        "alias": "Aparcamientos",
+        "userDefined": true
+      },
+      {
+        "text": " a la facultad",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "5f571960-d4ab-44d6-8288-8eef9bf7ca40",
+    "data": [
+      {
+        "text": "voy paya en ",
+        "userDefined": false
+      },
+      {
+        "text": "burra",
+        "meta": "@Aparcamientos",
+        "alias": "Aparcamientos",
+        "userDefined": true
+      },
+      {
+        "text": " a las ",
+        "userDefined": false
+      },
+      {
+        "text": "16:00",
+        "meta": "@sys.time",
+        "alias": "time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "080d7d4e-a89c-46ba-9586-95080cbba9dd",
+    "data": [
+      {
+        "text": "voy paya en ",
+        "userDefined": false
+      },
+      {
+        "text": "burra",
+        "meta": "@Aparcamientos",
+        "alias": "Aparcamientos",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "59ecce37-4d51-49f3-ba4f-a376b599b370",
+    "data": [
+      {
+        "text": "voy ",
+        "userDefined": false
+      },
+      {
+        "text": "paya",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "75f2da8e-5b54-4b56-bfd3-7b59e13de0f2",
+    "data": [
+      {
+        "text": "voy en ",
+        "userDefined": false
+      },
+      {
+        "text": "coche",
+        "meta": "@Aparcamientos",
+        "alias": "Aparcamientos",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e9f2a28d-48ad-4144-8a8a-b88a5d41cad5",
+    "data": [
+      {
+        "text": "voy para allá",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7ead304a-c554-4553-9eec-45c68c9b955c",
+    "data": [
+      {
+        "text": "voy para la facultad",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

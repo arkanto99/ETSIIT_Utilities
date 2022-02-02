@@ -1,0 +1,9 @@
+{
+  "id": "b66bef45-3b5c-4297-a940-0526b2f7e9c8",
+  "name": "Platos",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

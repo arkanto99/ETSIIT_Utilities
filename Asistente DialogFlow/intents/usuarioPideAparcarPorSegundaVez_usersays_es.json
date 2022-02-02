@@ -1,0 +1,145 @@
+[
+  {
+    "id": "344216d6-bb2a-4b13-8e10-22d3483d6ae1",
+    "data": [
+      {
+        "text": "Quiero aparcar mi coche hoy a las 10",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7fa81a5b-40be-4cae-b6c1-f230dbc53f9a",
+    "data": [
+      {
+        "text": "estacionar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "edf6a60e-5beb-4d5a-a5fb-38e058cb5347",
+    "data": [
+      {
+        "text": "aparcamientos",
+        "meta": "@sys.location",
+        "alias": "location",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "0277c613-be71-43d7-b963-94513c3385a6",
+    "data": [
+      {
+        "text": "estacionamientos",
+        "meta": "@sys.location",
+        "alias": "location",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "ada3d5f1-b668-44a4-a499-47ea8c5d5e28",
+    "data": [
+      {
+        "text": "¿puedo estacionar ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "meta": "@sys.unit-length-name",
+        "alias": "unit-length-name",
+        "userDefined": false
+      },
+      {
+        "text": " vehículo?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "4ebbdef4-161f-467a-b415-445f846d3dc9",
+    "data": [
+      {
+        "text": "ayúdame a aparcar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "96c34bd1-fe00-4fb2-8c83-de1c9bacec04",
+    "data": [
+      {
+        "text": "aparcar",
+        "meta": "@sys.location",
+        "alias": "location",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "3f0d51ca-7c87-458a-b052-78705968d860",
+    "data": [
+      {
+        "text": "¿Puedo aparcar ",
+        "userDefined": false
+      },
+      {
+        "text": "hoy",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "3bbdab8a-aeda-4d2d-845f-6e1f2fcd4140",
+    "data": [
+      {
+        "text": "quiero aparcar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

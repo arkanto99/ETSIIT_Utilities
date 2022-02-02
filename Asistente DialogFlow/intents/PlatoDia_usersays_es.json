@@ -1,0 +1,105 @@
+[
+  {
+    "id": "0746d784-a2ec-4ee1-b085-477412f3f676",
+    "data": [
+      {
+        "text": "Dime el ",
+        "userDefined": false
+      },
+      {
+        "text": "postre",
+        "meta": "@Platos",
+        "alias": "plato",
+        "userDefined": false
+      },
+      {
+        "text": " de ",
+        "userDefined": false
+      },
+      {
+        "text": "mañana",
+        "meta": "@sys.date",
+        "alias": "fecha",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "96994140-997a-4194-b610-a8f4dcf8f4ec",
+    "data": [
+      {
+        "text": "Cuál ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " el ",
+        "userDefined": false
+      },
+      {
+        "text": "segundo",
+        "meta": "@Platos",
+        "alias": "plato",
+        "userDefined": false
+      },
+      {
+        "text": " del ",
+        "userDefined": false
+      },
+      {
+        "text": "viernes",
+        "meta": "@sys.date",
+        "alias": "fecha",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a1129f24-e865-45f1-a7da-b6dda88c99d2",
+    "data": [
+      {
+        "text": "Qué hay de ",
+        "userDefined": false
+      },
+      {
+        "text": "primero",
+        "meta": "@Platos",
+        "alias": "plato",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "hoy",
+        "meta": "@sys.date",
+        "alias": "fecha",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

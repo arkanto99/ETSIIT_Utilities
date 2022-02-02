@@ -1,0 +1,9 @@
+{
+  "id": "4c59dbd8-c005-4883-8c8a-3511ac5a3fb7",
+  "name": "Aparcamientos",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

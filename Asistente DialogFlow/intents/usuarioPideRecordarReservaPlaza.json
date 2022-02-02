@@ -1,0 +1,62 @@
+{
+  "id": "21cdc307-4517-40c4-8a98-b781f1a57c14",
+  "name": "usuarioPideRecordarReservaPlaza",
+  "auto": true,
+  "contexts": [
+    "usuarioReservaAparcamiento",
+    "usuarioComentaVieneAFacultad-followup-afirmativo"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "usuarioReservaAparcamiento",
+          "lifespan": 20
+        },
+        {
+          "name": "usuarioComentaVieneAFacultad-followup-afirmativo",
+          "lifespan": 20
+        }
+      ],
+      "parameters": [
+        {
+          "id": "906a73bd-cd09-4718-9d98-7360b441cc2c",
+          "name": "location",
+          "required": false,
+          "dataType": "@sys.location",
+          "value": "$location",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Reservaste una plaza de #usuarioReservaAparcamiento.aparcamiento para el día #usuarioReservaAparcamiento.fecha a las #usuarioReservaAparcamiento.hora."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

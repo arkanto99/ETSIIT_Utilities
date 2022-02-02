@@ -1,0 +1,39 @@
+{
+  "id": "e6d93851-cffd-4d2c-b2a8-1930bd36f22b",
+  "parentId": "49ce06c0-7b79-4b1d-a29b-b5bb5f4bf16a",
+  "rootParentId": "49ce06c0-7b79-4b1d-a29b-b5bb5f4bf16a",
+  "name": "usuarioComentaVieneAFacultad - no",
+  "auto": true,
+  "contexts": [
+    "usuarioComentaVieneAFacultad-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "usuarioComentaVieneAFacultad.usuarioComentaVieneAFacultad-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "OK. ¡Ten cuidado!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xml:lang="es-ES" application="ETSIIT_Utilities_Root.xml">
+
+  <!-- Indicamos que la etiqueta help esta asignada a la gramatica ayuda, en caso de que el usuario diga una expresion diferente-->
+	<link event="help">
+		<grammar src="ayuda.jsgf"/>
+	</link>
+  
+  <var name="dia"/>
+  <var name="hora"/>
+	
+  <menu id="inicio">
+    <prompt><prosody rate = "medium" volume = "loud">De que desesha obter <emp> información </emp>?</prosody></prompt>
+    <prompt><prosody rate = "medium" volume = "loud">As opcións dispoñibles son:</prosody></prompt>
+    <prompt><prosody rate = "medium" volume = "loud"><emp>Horario de apertura.</emp></prosody></prompt>
+    <prompt><prosody rate = "medium" volume = "loud"><emp>Horario de peche.</emp></prosody></prompt>
+    <prompt><prosody rate = "medium" volume = "loud"><emp>Reservar cita.</emp></prosody></prompt>
+    <prompt><prosody rate = "medium" volume = "loud">Se desesha sair, diga <emp>Rematar chamada.</emp></prosody></prompt>
+    <help>
+          <reprompt/>
+    </help>
+      <choice next="#horario_apertura">
+        Horario de apertura </choice>
+      <choice next="#horario_cierre">
+        Horario de peche </choice>
+      <choice next="#reservar_cita">
+        Reservar cita</choice>
+    <choice next="#finalizar_llamada">
+        Rematar chamada</choice>
+  </menu>
+
+  <form id="horario_apertura">
+    <field name="servicio_a_consultar">
+      <prompt><prosody rate = "medium" volume = "loud">
+          De que servicio deseshas coñecer a hora de apertura?
+      </prosody></prompt>
+      <grammar src="servicio.jsgf"/>
+      
+      <!-- Llama al evento 'info_servicios_es' del fichero root cuando el usuario pide ayuda-->
+      <help>
+          <throw event="info_servicios_gal"/>
+      </help>
+    </field>
+
+    <filled>
+      <if cond="servicio_a_consultar == 'secretaria'">
+        <prompt><prosody rate = "medium" volume = "loud">
+            A hora de apertura da <emp> secretaría </emp> é as dez en punto da mañá.
+        </prosody></prompt>
+      <elseif cond="servicio_a_consultar == 'cafeteria'"/>
+        <prompt><prosody rate = "medium" volume = "loud">
+            A hora de apertura da <emp> cafetería </emp> é as nove e cuarto da mañá.
+        </prosody></prompt>
+      <elseif cond="servicio_a_consultar == 'copisteria'"/>
+        <prompt><prosody rate = "medium" volume = "loud">
+            A hora de apertura da <emp> copistería </emp> é as oito e media da mañá.
+        </prosody></prompt>
+      <elseif cond="servicio_a_consultar == 'comedor'"/>
+        <prompt><prosody rate = "medium" volume = "loud">
+            A hora de apertura do <emp> comedor </emp> é as dúas menos cuarto da tarde.
+        </prosody></prompt>
+      </if>
+      <goto next="#finalizar_llamada"/>
+    </filled>
+  </form>
+
+  <form id="horario_cierre">
+    <field name="servicio_a_consultar">
+      <prompt><prosody rate = "medium" volume = "loud">
+           De que servicio deseshas coñecer a hora de peche?
+      </prosody></prompt>
+      <grammar src="servicio.jsgf"/>
+      
+      <!-- Llama al evento 'info_servicios_es' del fichero root cuando el usuario pide ayuda-->
+      <help>
+          <throw event="info_servicios_gal"/>
+      </help>
+    </field>
+
+    <filled>
+      <if cond="servicio_a_consultar == 'secretaria'">
+        <prompt><prosody rate = "medium" volume = "loud">
+            A hora de peche da <emp> secretaría </emp> é as 3 en punto da tarde.
+        </prosody></prompt>
+      <elseif cond="servicio_a_consultar == 'cafeteria'"/>
+        <prompt><prosody rate = "medium" volume = "loud">
+            A hora de peche da <emp> cafetería </emp> é as 5 e cuarto da tarde.
+        </prosody></prompt>
+      <elseif cond="servicio_a_consultar == 'copisteria'"/>
+        <prompt><prosody rate = "medium" volume = "loud">
+            A hora de peche da <emp> copistería </emp> é as oito e media da noite.
+        </prosody></prompt>
+      <elseif cond="servicio_a_consultar == 'comedor'"/>
+        <prompt><prosody rate = "medium" volume = "loud">
+            A hora de peche do <emp> comedor </emp> é as catro menos cuarto da tarde.
+        </prosody></prompt>
+      </if>
+      <goto next="#finalizar_llamada"/>
+    </filled>
+  </form>
+
+  <form id="reservar_cita">
+    <field name="dia_semana_cita">
+      <prompt><prosody rate = "medium" volume = "loud">Agora mesmo só pode reservar hora na <emp>Secretaría.</emp> </prosody></prompt>
+      <prompt><prosody rate = "medium" volume = "loud">Pode reservar hora entre o luns e o venres. </prosody></prompt>
+      <prompt><prosody rate = "medium" volume = "loud">Que <emp>día</emp> da semana desesha a cita?</prosody></prompt>
+      <grammar src="diaGAL.jsgf"/>
+      
+      <catch event="nomatch">
+          <prompt><prosody rate = "medium" volume = "loud">Pode reservar hora entre o luns e o venres. Que <emp>día</emp> da semana desesha a cita?</prosody></prompt>
+      </catch>
+      <help>
+          <prompt><prosody rate = "medium" volume = "loud">Pode reservar hora entre o luns e o vernes. Que <emp>día</emp> da semana desesha a cita?</prosody></prompt>
+      </help>
+      
+      <filled>
+        <assign name="dia" expr="dia_semana_cita"/>
+      </filled>
+      
+    </field>
+    
+    
+    <field name="hora_cita">
+      <prompt><prosody rate = "medium" volume = "loud">A qué hora quere a cita?</prosody></prompt>
+      <prompt><prosody rate = "medium" volume = "loud">Pode reservar as horas en punto ou a e media. </prosody></prompt>
+      <grammar src="horarioGAL.jsgf"/>
+      <catch event="nomatch">
+          <throw event="error_hora_gal"/>
+      </catch>
+      
+      <help>
+          <throw event="error_hora_gal"/>
+      </help>
+
+      <filled>
+        <assign name="hora" expr="hora_cita"/>
+       </filled>
+    </field>
+    
+    <filled>
+        <goto next="#confirmar_cita"/>
+    </filled>
+    
+  </form>
+  
+  <form id="confirmar_cita">
+      <field name="confirmacion">
+          <prompt><prosody rate = "medium" volume = "loud">Entón reservamos a cita o <value expr="dia"/> as <value expr="hora"/>? </prosody></prompt>
+          <grammar src="confirmacion.jsgf"/>
+          <catch event="nomatch">
+            <throw event="error_reserva_gal"/>
+          </catch>
+          <help>
+            <prompt><prosody rate = "medium" volume = "loud">Responda sí ou non</prosody></prompt>
+          </help>
+       </field>
+       <filled>
+            <if cond="confirmacion == 'si'">
+    		  <prompt><prosody rate = "medium" volume = "loud">Reservaches cita na secretaría o <value expr="dia"/> as <value expr="hora"/>.</prosody></prompt>
+              <goto next="#finalizar_llamada"/>
+            <elseif cond="confirmacion == 'non'"/>
+                <prompt><prosody rate = "medium" volume = "loud">Está ben. Intentémolo de novo.</prosody></prompt>
+                <goto next="#reservar_cita"/> 
+            </if> 
+        </filled>
+        
+  </form>
+  
+  <form id="finalizar_llamada">
+    <field name="salida">
+      <prompt><prosody rate = "medium" volume = "loud">¿Deseshas rematar a chamada?</prosody></prompt>
+       <help>
+        <prompt><prosody rate = "medium" volume = "loud">Responda sí se desesha rematar a chamada</prosody></prompt>
+      </help>
+      <grammar src="confirmacion.jsgf"/>
+      <filled>
+        <if cond="salida == 'si'">
+            <prompt><prosody rate = "medium" volume = "loud">Dacordo, adeus.</prosody></prompt>
+            <prompt><prosody rate = "medium" volume = "loud"><audio src="./sonido_despedida.wav"/></prosody></prompt>
+            <exit/>
+        <else/>
+            <prompt><prosody rate = "medium" volume = "loud">Dacordo, continuemos.</prosody></prompt>
+            <clear namelist="salida"/>
+            <goto next="#inicio"/>
+        </if>
+      </filled>
+    </field>
+  </form>
+</vxml>

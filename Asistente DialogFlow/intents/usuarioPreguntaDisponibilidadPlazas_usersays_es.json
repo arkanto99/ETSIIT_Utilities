@@ -1,0 +1,115 @@
+[
+  {
+    "id": "322279fc-a4f0-43df-93e5-7d74532e28a5",
+    "data": [
+      {
+        "text": "¿",
+        "userDefined": false
+      },
+      {
+        "text": "Cuántas ",
+        "userDefined": false
+      },
+      {
+        "text": "plazas",
+        "userDefined": false
+      },
+      {
+        "text": " quedan?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "73dd476b-a143-4f1e-9fb1-450fa6af2ae1",
+    "data": [
+      {
+        "text": "Hay",
+        "userDefined": false
+      },
+      {
+        "text": " hueco?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "33c33c43-4032-4d6d-b41b-1499d4dbc865",
+    "data": [
+      {
+        "text": "¿Hay ",
+        "userDefined": false
+      },
+      {
+        "text": "plazas",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "62c8251c-371b-4377-91f1-982f56fa3781",
+    "data": [
+      {
+        "text": "Cuántos huecos hay",
+        "userDefined": false
+      },
+      {
+        "text": " de ",
+        "userDefined": false
+      },
+      {
+        "text": "moto",
+        "meta": "@Aparcamientos",
+        "alias": "aparcamientos",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "6f4dd102-6f3d-49e3-9c0e-2e70dfb897ca",
+    "data": [
+      {
+        "text": "cuantas plazas de ",
+        "userDefined": false
+      },
+      {
+        "text": "coche",
+        "meta": "@Aparcamientos",
+        "alias": "aparcamientos",
+        "userDefined": false
+      },
+      {
+        "text": " hay?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

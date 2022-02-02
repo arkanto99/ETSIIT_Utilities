@@ -1,0 +1,146 @@
+[
+  {
+    "id": "f5ce6a06-65ae-4c84-a8dd-18157ee2c7b9",
+    "data": [
+      {
+        "text": "tengo plaza de aparcamiento?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "040d43de-41ca-46d5-9fea-119f92a3d8cb",
+    "data": [
+      {
+        "text": "tengo plaza de ",
+        "userDefined": false
+      },
+      {
+        "text": "parking",
+        "meta": "@sys.location",
+        "alias": "location",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "8a997ec3-9633-4877-bab7-523fd8d87119",
+    "data": [
+      {
+        "text": "he realizado alguna reserva de ",
+        "userDefined": false
+      },
+      {
+        "text": "plaza",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "039db5e7-0cf9-4491-8737-8c00fc87e337",
+    "data": [
+      {
+        "text": "me has ",
+        "userDefined": false
+      },
+      {
+        "text": "guardado",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "plaza",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "8265d141-0702-46dd-8f72-1d3ea07c97be",
+    "data": [
+      {
+        "text": "tengo reservada ",
+        "userDefined": false
+      },
+      {
+        "text": "plaza",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d1d7643f-75f7-4597-9f82-4a822a1733c2",
+    "data": [
+      {
+        "text": "y ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "plaza",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

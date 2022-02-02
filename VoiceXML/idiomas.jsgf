@@ -1,0 +1,6 @@
+#JSGF V1.0;
+
+grammar idiomas;
+
+
+public <idiomas> = español | castellano | gallego | galego | valenciano | valenciá ;

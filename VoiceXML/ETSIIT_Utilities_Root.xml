@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xml:lang="es-ES">
+
+  <form id="idioma">
+    <block>
+		<prompt><prosody rate = "medium" volume = "loud"> Bienvenido a ETSIIT Utilitis, la herramienta que le permite 
+		conocer horarios y reservar citas en los distintos servicios de la Escuela <emp>Técnica</emp> Superior de 
+		<emp>Ingenierías</emp> <emp>Informática</emp> y de <emp>Telecomunicación</emp> de la Universidad de Granada </prosody></prompt>
+		<break time="200ms"/>
+	</block>
+    
+    <field name="idioma_elegido">
+      <prompt><prosody rate = "medium" volume = "loud">
+          En que idioma quieres hacer tu consulta? Para hablar en español diga <emp>ESPAÑOL o CASTELLANO</emp> o pulse 1.
+          Para continuar en gallego diga <emp>GALLEGO o GALEGO</emp> o pulse 2. Para hacerlo en valenciano diga <emp>VALENCIANO o VALENCIÁ</emp> 
+          o pulse 3.
+      </prosody></prompt>
+      <grammar src="idiomas.jsgf"/>
+      <option dtmf="1" value="español"></option>
+      <option dtmf="2" value="gallego"></option>
+      <option dtmf="3" value="valenciano"></option>
+    </field>
+
+    <filled>
+      <if cond="idioma_elegido == 'español' || idioma_elegido == 'castellano' ">
+        <prompt bargein="false"><prosody rate = "medium" volume = "loud">
+            De acuerdo, esta <emp> conversación </emp> la mantendremos en <value expr="idioma_elegido"/>.
+        </prosody></prompt>
+        <goto next="./ETSIIT_Utilities_ES.xml"/>
+      <elseif cond="idioma_elegido == 'gallego' || idioma_elegido == 'galego'"/>
+        <prompt bargein="false"><prosody rate = "medium" volume = "loud">
+            Dacordo, esta <emp> conversa </emp> manterémola en <value expr="idioma_elegido"/>.
+        </prosody></prompt>
+        <goto next="./ETSIIT_Utilities_GAL.xml"/>
+      <elseif cond="idioma_elegido == 'valenciano' || idioma_elegido == 'valenciá'"/>
+        <prompt bargein="false"><prosody rate = "medium" volume = "loud">
+            Dacord, mantindrém aquesta <emp> conversa </emp>  en <value expr="idioma_elegido"/>.
+        </prosody></prompt>
+        <goto next="./ETSIIT_Utilities_VAL.xml"/>
+      </if>
+    </filled>
+
+  </form>
+
+  <catch event="info_servicios_es">
+      <prompt><prosody rate = "medium" volume = "loud">Los servicios disponibles para consulta son: secretaría, cafetería, comedor y copistería.</prosody></prompt>
+      <reprompt/>
+  </catch>
+
+  <catch event="info_servicios_gal">
+      <prompt><prosody rate = "medium" volume = "loud">Os servizos dispoñibles para consulta son: secretaría, cafetería, comedor e copistería.</prosody></prompt>
+      <reprompt/>
+  </catch>
+
+  <catch event="info_servicios_val">
+      <prompt><prosody rate = "medium" volume = "loud">Els serveis disponibles per a consulta son: secretaría, cafetería, menshador i copistería.</prosody></prompt>
+      <reprompt/>
+  </catch>
+  
+  <catch event="error_hora_es">
+    <prompt><prosody rate = "medium" volume = "loud">La secretaría solo abre de 9 de la mañana a 3 de la tarde.</prosody></prompt>
+    <reprompt/>
+  </catch>
+
+  <catch event="error_hora_gal">
+    <prompt><prosody rate = "medium" volume = "loud">A secretaría so abre das nove da mañá as 3 da tarde.</prosody></prompt>
+    <reprompt/>
+  </catch>
+
+  <catch event="error_hora_val">
+    <prompt><prosody rate = "medium" volume = "loud">Secretaría només obri de nou de la matí a tres de la vesprada.</prosody></prompt>
+    <reprompt/>
+  </catch>
+  
+  <catch event="error_reserva_es">
+    <prompt><prosody rate = "medium" volume = "loud">No te entendí bien. Volvamos a intentarlo.</prosody></prompt>
+    <reprompt/>
+  </catch>
+
+  <catch event="error_reserva_gal">
+    <prompt><prosody rate = "medium" volume = "loud">Non te entendín ben. Intentémolo de novo.</prosody></prompt>
+    <reprompt/>
+  </catch>
+
+  <catch event="error_reserva_val">
+    <prompt><prosody rate = "medium" volume = "loud">No tentenc bé. Tornem a intenra ho.</prosody></prompt>
+    <reprompt/>
+  </catch>
+
+
+
+
+</vxml>

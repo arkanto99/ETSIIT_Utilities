@@ -1,0 +1,28 @@
+[
+  {
+    "id": "2cf7def2-1589-4625-a16d-2125061aa9d8",
+    "data": [
+      {
+        "text": "Muchas gracias",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "825c1e41-b092-489c-9fd5-df85cb887fbe",
+    "data": [
+      {
+        "text": "Gracias",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

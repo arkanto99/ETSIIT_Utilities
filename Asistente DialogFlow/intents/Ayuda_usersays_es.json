@@ -1,0 +1,119 @@
+[
+  {
+    "id": "00d8016e-af5f-4111-a69a-085b6ce0737b",
+    "data": [
+      {
+        "text": "¿Qué me ofreces?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a6f935ac-27b9-4739-9c0d-0dd1810210fa",
+    "data": [
+      {
+        "text": "¿Qué ofreces?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "2d811971-222a-493c-9b8f-b8dcbcb32037",
+    "data": [
+      {
+        "text": "Que haces",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "395045cf-f2a8-4c2e-a896-e32854d933e5",
+    "data": [
+      {
+        "text": "No sé que hacer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "980708e9-2e85-4ca8-87b1-d5b543ccee11",
+    "data": [
+      {
+        "text": "Necesito ayuda",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "8844e615-659a-495d-b15b-328e58a4107e",
+    "data": [
+      {
+        "text": "Dame informacion",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "f6e34f10-8a75-4962-99c3-92ed623c7223",
+    "data": [
+      {
+        "text": "Quiero informacion",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "6d8b04b7-6acc-437c-8fc3-c85a317ddd67",
+    "data": [
+      {
+        "text": "Que sabes hacer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a0e5fa4b-1dd7-41d1-8715-23b830d60f99",
+    "data": [
+      {
+        "text": "Que puedes hacer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "id": "ccac154b-1e72-48f9-aadd-cd0538d5b3f3",
+  "name": "Ayuda",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Puedo proporcionarte información sobre el comedor (precio, horarios, menús), sobre horarios de distintos servicios (Secretaría, cafetería,...) y sobre los parkings (¡incluso puedo reservarte una plaza!)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

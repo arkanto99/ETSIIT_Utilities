@@ -1,0 +1,34 @@
+[
+  {
+    "value": "primero",
+    "synonyms": [
+      "primero",
+      "prime",
+      "entrante",
+      "entrada"
+    ]
+  },
+  {
+    "value": "segundo",
+    "synonyms": [
+      "segundo",
+      "secundario",
+      "acompañamiento",
+      "plato fuerte",
+      "principal",
+      "plato principal"
+    ]
+  },
+  {
+    "value": "postre",
+    "synonyms": [
+      "postre",
+      "tercero",
+      "dulce",
+      "fruta",
+      "terce",
+      "último plato",
+      "plato final"
+    ]
+  }
+]

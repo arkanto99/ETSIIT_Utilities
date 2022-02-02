@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+grammar horarioGAL;
+
+public <horarioGAL> = dez en punto | dez e media | 
+once en punto | once e media | 
+doce en punto | doce e media | 
+unha en punto | unha e media | 
+duas en punto | duas e media ;

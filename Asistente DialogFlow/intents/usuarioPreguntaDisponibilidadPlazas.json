@@ -1,0 +1,52 @@
+{
+  "id": "f70629e2-429f-4c70-ac44-d8dbfd74d5f5",
+  "name": "usuarioPreguntaDisponibilidadPlazas",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0eaa9937-e45f-412b-9afa-e2aa0ebb9cec",
+          "name": "aparcamientos",
+          "required": true,
+          "dataType": "@Aparcamientos",
+          "value": "$aparcamientos",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿De qué tipo de vehículo quieres conocer si hay plazas?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

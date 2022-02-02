@@ -1,0 +1,123 @@
+{
+  "id": "eba7543c-92d0-4877-9c9d-0d0307b2908f",
+  "name": "usuarioPideAparcar",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "usuarioReservaAparcamiento",
+          "lifespan": 20
+        }
+      ],
+      "parameters": [
+        {
+          "id": "a1d4ffbc-85fb-485b-8859-974f07d776e0",
+          "name": "fecha",
+          "required": true,
+          "dataType": "@sys.date",
+          "value": "$fecha",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Cuándo vendrás?"
+            },
+            {
+              "lang": "es",
+              "value": "¿Qué día vienes?"
+            },
+            {
+              "lang": "es",
+              "value": "¿Es para hoy u otro día?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "89260e81-ce0b-4735-a495-3b35e4bc8688",
+          "name": "aparcamiento",
+          "required": true,
+          "dataType": "@Aparcamientos",
+          "value": "$aparcamiento",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Con qué te desplazas?"
+            },
+            {
+              "lang": "es",
+              "value": "¿Cómo vienes a la facultad?"
+            },
+            {
+              "lang": "es",
+              "value": "¿Bici, patinete, moto o coche?"
+            },
+            {
+              "lang": "es",
+              "value": "¿En qué te vendrás esta vez?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "1fd782e2-607f-4e65-ad32-70ef35d27436",
+          "name": "hora",
+          "required": true,
+          "dataType": "@sys.time",
+          "value": "$hora",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿A que hora vienes?"
+            },
+            {
+              "lang": "es",
+              "value": "¿Sobre qué hora vendrás?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "OK. Te guardamos tu plaza de $aparcamiento, para $fecha a las $hora  tal y como deseas.",
+            "Vale. Tendrás tu plaza de $aparcamiento libre para $fecha a las $hora"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "value": "comedor",
+    "synonyms": [
+      "comedor",
+      "comedor escolar",
+      "comedor universitario"
+    ]
+  },
+  {
+    "value": "copistería",
+    "synonyms": [
+      "copistería",
+      "copi",
+      "fotocopiadora",
+      "papeleria",
+      "impresora",
+      "copiadora",
+      "copisteria"
+    ]
+  },
+  {
+    "value": "cafetería",
+    "synonyms": [
+      "cafetería",
+      "café",
+      "bar",
+      "restaurante",
+      "cantina",
+      "cafeteria"
+    ]
+  },
+  {
+    "value": "biblioteca",
+    "synonyms": [
+      "biblioteca",
+      "biblio",
+      "librería"
+    ]
+  },
+  {
+    "value": "secretaría",
+    "synonyms": [
+      "secretaría",
+      "secre",
+      "secretaria"
+    ]
+  },
+  {
+    "value": "facultad",
+    "synonyms": [
+      "facultad",
+      "facu",
+      "escuela",
+      "uni",
+      "universidad"
+    ]
+  }
+]

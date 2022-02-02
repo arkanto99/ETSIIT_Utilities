@@ -1,0 +1,48 @@
+[
+  {
+    "value": "bicicleta",
+    "synonyms": [
+      "bicicleta",
+      "bici",
+      "mtb",
+      "monty",
+      "vici",
+      "bike",
+      "mountain bike",
+      "bicicletas"
+    ]
+  },
+  {
+    "value": "patinete",
+    "synonyms": [
+      "patinete",
+      "patín",
+      "patin",
+      "xiaomi",
+      "patinetes"
+    ]
+  },
+  {
+    "value": "coche",
+    "synonyms": [
+      "coche",
+      "carro",
+      "buga",
+      "ferrari",
+      "fragoneta",
+      "furgoneta",
+      "coches"
+    ]
+  },
+  {
+    "value": "moto",
+    "synonyms": [
+      "moto",
+      "motos",
+      "burra",
+      "borriquilla",
+      "vespino",
+      "vespa"
+    ]
+  }
+]

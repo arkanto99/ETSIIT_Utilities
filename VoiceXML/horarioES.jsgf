@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+grammar horarioES;
+
+public <horarioES> = diez en punto | diez y media | 
+once en punto | once y media | 
+doce en punto | doce y media | 
+una en punto | una y media | 
+dos en punto | dos y media ;

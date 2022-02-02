@@ -1,0 +1,284 @@
+[
+  {
+    "id": "f3d25a1a-e5b7-4087-8225-1e98b76a176e",
+    "data": [
+      {
+        "text": "¿Cual ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "meta": "@sys.location",
+        "alias": "location",
+        "userDefined": false
+      },
+      {
+        "text": " el horario?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7bf1160b-ba53-4f76-8bef-3ff7c1b24db8",
+    "data": [
+      {
+        "text": "dime el horario de la ",
+        "userDefined": false
+      },
+      {
+        "text": "cafeteria",
+        "meta": "@Servicios",
+        "alias": "servicio",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a86930e4-c210-4fee-a4ce-d13d4628eac1",
+    "data": [
+      {
+        "text": "cual ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " el horario de ",
+        "userDefined": false
+      },
+      {
+        "text": "la",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "copisteria",
+        "meta": "@Servicios",
+        "alias": "servicio",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "ef748f31-f8f3-4f68-85e9-5be361c6ccdc",
+    "data": [
+      {
+        "text": "cual ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " el horario de ",
+        "userDefined": false
+      },
+      {
+        "text": "la",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "cafeteria",
+        "meta": "@Servicios",
+        "alias": "servicio",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "c7aab33f-de57-431e-b55c-b38d75080ad4",
+    "data": [
+      {
+        "text": "Dime el horario de la ",
+        "userDefined": false
+      },
+      {
+        "text": "secretaría",
+        "meta": "@Servicios",
+        "alias": "servicio",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1349db4b-d5b9-4d78-8da7-08be7847a5d4",
+    "data": [
+      {
+        "text": "Horario del ",
+        "userDefined": false
+      },
+      {
+        "text": "comedor",
+        "meta": "@Servicios",
+        "alias": "servicio",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "65edc71c-081f-40c2-b215-eb22eb59a40d",
+    "data": [
+      {
+        "text": "¿Cuál ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " el horario de la ",
+        "userDefined": false
+      },
+      {
+        "text": "cafetería",
+        "meta": "@Servicios",
+        "alias": "servicio",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d5bee2b6-81a6-4fd5-80d2-47f5e41f4051",
+    "data": [
+      {
+        "text": "Horario de la ",
+        "userDefined": false
+      },
+      {
+        "text": "biblio",
+        "meta": "@Servicios",
+        "alias": "servicio",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "0c097846-8cdb-4aca-96f0-7e0a477efec4",
+    "data": [
+      {
+        "text": "Dime el horario de ",
+        "userDefined": false
+      },
+      {
+        "text": "facultad",
+        "meta": "@Servicios",
+        "alias": "servicio",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7089f946-95c7-4fb1-9606-499b896a93d0",
+    "data": [
+      {
+        "text": "Dime el horario",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "be9a4011-3f79-4501-8059-8f03f13071bc",
+    "data": [
+      {
+        "text": "Dime el horario del ",
+        "userDefined": false
+      },
+      {
+        "text": "comedor",
+        "meta": "@Servicios",
+        "alias": "servicio",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "759705df-9c8e-4f78-8775-dcc7c65d5844",
+    "data": [
+      {
+        "text": "¿Cuál ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " el horario del ",
+        "userDefined": false
+      },
+      {
+        "text": "comedor",
+        "meta": "@Servicios",
+        "alias": "servicio",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

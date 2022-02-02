@@ -1,0 +1,200 @@
+[
+  {
+    "id": "31218038-d22a-4143-95d3-a50fbfc6fd94",
+    "data": [
+      {
+        "text": "¿Que hay ",
+        "userDefined": false
+      },
+      {
+        "text": "hoy",
+        "meta": "@sys.date",
+        "alias": "fecha",
+        "userDefined": false
+      },
+      {
+        "text": " de ",
+        "userDefined": false
+      },
+      {
+        "text": "comer",
+        "meta": "@sys.location",
+        "alias": "location",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1791f06e-cca2-42b7-85ba-b62b52f708f9",
+    "data": [
+      {
+        "text": "¿Cual es el menú del comedor?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "b86d3bfc-0a85-4fe7-b046-f8610df167ec",
+    "data": [
+      {
+        "text": "Dime ",
+        "userDefined": false
+      },
+      {
+        "text": "la comida",
+        "userDefined": false
+      },
+      {
+        "text": " de ",
+        "userDefined": false
+      },
+      {
+        "text": "mañana",
+        "meta": "@sys.date",
+        "alias": "fecha",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "57b1a703-1eee-47d4-9bc7-eab4f82c965e",
+    "data": [
+      {
+        "text": "que tiene ",
+        "userDefined": false
+      },
+      {
+        "text": "el",
+        "userDefined": false
+      },
+      {
+        "text": " comedor ",
+        "userDefined": false
+      },
+      {
+        "text": "el",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "jueves",
+        "meta": "@sys.date",
+        "alias": "fecha",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "dffa1d6b-d1b8-4bc6-9fef-b6485b12c003",
+    "data": [
+      {
+        "text": "¿Qué hay el ",
+        "userDefined": false
+      },
+      {
+        "text": "miércoles",
+        "meta": "@sys.date",
+        "alias": "fecha",
+        "userDefined": false
+      },
+      {
+        "text": " para ",
+        "userDefined": false
+      },
+      {
+        "text": "comer",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "8e0696eb-c623-4463-9398-ecc12e8c2f88",
+    "data": [
+      {
+        "text": "dime el menú del ",
+        "userDefined": false
+      },
+      {
+        "text": "martes",
+        "meta": "@sys.date",
+        "alias": "fecha",
+        "userDefined": false
+      },
+      {
+        "text": " que viene",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7c4cc7e4-3b2b-42d0-8f34-a13fa1fee464",
+    "data": [
+      {
+        "text": "¿Qué hay ",
+        "userDefined": false
+      },
+      {
+        "text": "hoy",
+        "meta": "@sys.date",
+        "alias": "fecha",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "b7c99825-6c7e-46b2-9361-86a9918a9ee0",
+    "data": [
+      {
+        "text": "Dime el menú",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

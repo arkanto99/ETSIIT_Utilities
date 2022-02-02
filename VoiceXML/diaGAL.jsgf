@@ -1,0 +1,5 @@
+#JSGF V1.0;
+
+grammar diaGAL;
+
+public <diaGAL> = luns | martes | mercores | shoves | venres;

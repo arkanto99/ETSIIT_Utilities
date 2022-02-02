@@ -1,0 +1,124 @@
+[
+  {
+    "id": "29ca26d4-cbbe-4e27-b8b2-5ec7d1cf2a90",
+    "data": [
+      {
+        "text": "¿Cuanto cuesta ",
+        "userDefined": false
+      },
+      {
+        "text": "el comerdor",
+        "meta": "@sys.location",
+        "alias": "location",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a508ba89-360d-478e-83df-b98b65cd6bfb",
+    "data": [
+      {
+        "text": "¿Cuanto cuesta ",
+        "userDefined": false
+      },
+      {
+        "text": "comer",
+        "meta": "@sys.location",
+        "alias": "location",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "760f5c17-12c2-4b9f-8211-0e3e3ce2c3ed",
+    "data": [
+      {
+        "text": "Dime el precio del comedor",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "2c73efac-d436-404b-bdc2-a129028526bc",
+    "data": [
+      {
+        "text": "¿",
+        "userDefined": false
+      },
+      {
+        "text": "Es",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "caro",
+        "userDefined": false
+      },
+      {
+        "text": " el comedor?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "ebd532fb-4893-4b8f-9115-77a7bad5039d",
+    "data": [
+      {
+        "text": "¿Cuánto vale el comedor?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "960a518a-e39c-4614-822c-8c6d3406e4af",
+    "data": [
+      {
+        "text": "¿Cuál ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "userDefined": false
+      },
+      {
+        "text": " el precio del comedor?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

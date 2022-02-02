@@ -1,0 +1,6 @@
+#JSGF V1.0;
+
+grammar servicio;
+
+
+public <servicio> = secretaria | cafeteria | copisteria | comedor | menshador;
