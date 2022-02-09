@@ -1,4 +1,3 @@
-
 # ETSIIT Utilities
 
 Prácticas de la asignatura Nuevos Paradigmas de Interacción de la Universidad de Granada (UGR). Curso 2021/2022.
@@ -49,4 +48,3 @@ Se compone de los siguientes módulos o herramientas:
 ![Navegación por voz en la app](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ![Pantalla principal punto información](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
