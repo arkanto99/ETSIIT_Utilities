@@ -2,6 +2,7 @@
 
 Prácticas de la asignatura Nuevos Paradigmas de Interacción de la Universidad de Granada (UGR). Curso 2021/2022.
 
+![Logo](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Icono.png)
 
 ## Autores
 
@@ -9,12 +10,6 @@ Prácticas de la asignatura Nuevos Paradigmas de Interacción de la Universidad 
 - [Eduardo Muñoz del Pino](https://github.com/eduardo7423)
 - [Pablo Rodríguez Fernández](https://github.com/arkanto99)
 - [Sergio Jesús Jerez Vázquez](https://github.com/sjjerez)
-
-
-
-
-
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
 
 ## Descripción
@@ -41,10 +36,10 @@ Se compone de los siguientes módulos o herramientas:
 
 ## Screenshots
 
-![Pantalla principal Android](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Pantalla principal Android](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Android_Principal.png)
 
-![Conversación con el bot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Conversación con el bot](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Bot.png)
 
-![Navegación por voz en la app](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Navegación por voz en la app](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Android_NavegacionVoz.png)
 
-![Pantalla principal punto información](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Pantalla principal punto información](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Leap_Principal.jpeg)
