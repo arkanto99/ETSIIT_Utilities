@@ -2,6 +2,7 @@
 
 Prácticas de la asignatura Nuevos Paradigmas de Interacción de la Universidad de Granada (UGR). Curso 2021/2022.
 
+![Logo](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Icono.png)
 
 ## Autores
 
@@ -9,12 +10,6 @@ Prácticas de la asignatura Nuevos Paradigmas de Interacción de la Universidad 
 - [Eduardo Muñoz del Pino](https://github.com/eduardo7423)
 - [Pablo Rodríguez Fernández](https://github.com/arkanto99)
 - [Sergio Jesús Jerez Vázquez](https://github.com/sjjerez)
-
-
-
-
-
-![Logo](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Icono.png)
 
 
 ## Descripción
