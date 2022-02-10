@@ -16,10 +16,10 @@ Prácticas de la asignatura Nuevos Paradigmas de Interacción de la Universidad 
 ETSIIT Utilities son un conjunto de herramientas que buscan facilitar el día a día de los integrantes de la Escuela Técnica Superior de Ingeniería Informática y Telecomunicaciones de la Universidad de Granada (España).
 
 Se compone de los siguientes módulos o herramientas:
-+ Aplicación Android
-+ Asistente conversacional (bot)
-+ Punto de información presencial controlado por gestos
-+ Punto de información telefónico
++ [Aplicación Android](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/Aplicacion%20Android)
++ [Asistente conversacional (bot)](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/Asistente%20DialogFlow)
++ [Punto de información presencial controlado por gestos](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/Aplicacion%20Leap)
++ [Punto de información telefónico](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/VoiceXML)
 
 
 
