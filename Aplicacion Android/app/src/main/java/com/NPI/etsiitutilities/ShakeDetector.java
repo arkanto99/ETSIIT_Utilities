@@ -51,7 +51,7 @@ public class ShakeDetector implements SensorEventListener {
      * @return true if the device supports shake detection.
      */
     public boolean start(SensorManager sensorManager) {
-        return start(sensorManager, SensorManager.SENSOR_DELAY_FASTEST);
+        return start(sensorManager, SensorManager.SENSOR_DELAY_GAME);
     }
 
     /**
