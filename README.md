@@ -1,10 +1,10 @@
 # ETSIIT Utilities
 
-Prácticas de la asignatura Nuevos Paradigmas de Interacción de la Universidad de Granada (UGR). Curso 2021/2022.
+University project for the subject New Paradigms of Interaction at the University of Granada (UGR). Course 2021/2022.
 
 ![Logo](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Icono.png)
 
-## Autores
+## Authors
 
 - [Carlos Lao Vizcaíno](https://github.com/carloslao)
 - [Eduardo Muñoz del Pino](https://github.com/eduardo7423)
@@ -12,34 +12,34 @@ Prácticas de la asignatura Nuevos Paradigmas de Interacción de la Universidad 
 - [Sergio Jesús Jerez Vázquez](https://github.com/sjjerez)
 
 
-## Descripción
-ETSIIT Utilities son un conjunto de herramientas que buscan facilitar el día a día de los integrantes de la Escuela Técnica Superior de Ingeniería Informática y Telecomunicaciones de la Universidad de Granada (España).
+## Description
+ETSIIT Utilities are a set of tools that aim to facilitate the daily life of the members of the School of Computer Engineering and Telecommunications of the University of Granada (Spain).
 
-Se compone de los siguientes módulos o herramientas:
-+ [Aplicación Android](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/Aplicacion%20Android)
-+ [Asistente conversacional (bot)](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/Asistente%20DialogFlow)
-+ [Punto de información presencial controlado por gestos](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/Aplicacion%20Leap)
-+ [Punto de información telefónico](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/VoiceXML)
+It consists of the following modules or tools:
++ [Android App](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/Aplicacion%20Android)
++ [Chatbot](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/Asistente%20DialogFlow)
++ [Gesture-controlled face-to-face information point](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/Aplicacion%20Leap)
++ [Telephone information point](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/VoiceXML)
 
 
 
 ## Tech Stack
 
-**Aplicación Android:** Android Studio, Java
+**Android App:** Android Studio, Java
 
-**Puesto informativo:** Leap Motion, Python, Tkinter
+**Information Point:** Leap Motion, Python, Tkinter
 
-**Bot:** DialogFlow, PubNub
+**Chatbot:** DialogFlow, PubNub
 
-**Puesto telefónico:** VoiceXML
+**Telephone point:** VoiceXML
 
 
 ## Screenshots
 
-![Pantalla principal Android](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Android_Principal.png)
+![Android main screen](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Android_Principal.png)
 
-![Conversación con el bot](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Bot.png)
+![Chatbot conversation](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Bot.png)
 
-![Navegación por voz en la app](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Android_NavegacionVoz.png)
+![Voice navigation](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Android_NavegacionVoz.png)
 
-![Pantalla principal punto información](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Leap_Principal.jpeg)
+![Information point main screen](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Leap_Principal.jpeg)
