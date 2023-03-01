@@ -4,14 +4,6 @@ University project for the subject New Paradigms of Interaction at the Universit
 
 ![Logo](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Icono.png)
 
-## Authors
-
-- [Carlos Lao Vizcaíno](https://github.com/carloslao)
-- [Eduardo Muñoz del Pino](https://github.com/eduardo7423)
-- [Pablo Rodríguez Fernández](https://github.com/arkanto99)
-- [Sergio Jesús Jerez Vázquez](https://github.com/sjjerez)
-
-
 ## Description
 ETSIIT Utilities are a set of tools that aim to facilitate the daily life of the members of the School of Computer Engineering and Telecommunications of the University of Granada (Spain).
 
@@ -21,6 +13,14 @@ It consists of the following modules or tools:
 + [Gesture-controlled face-to-face information point](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/Aplicacion%20Leap)
 + [Telephone information point](https://github.com/arkanto99/ETSIIT_Utilities/tree/master/VoiceXML)
 
+
+## Outstanding features
+
++ Voice navigation between the main windows of the app
++ Navigation by gesture (for example, drawing a "B" or a "C")
++ Use of the camera, gyroscopes and 360° images to simulate AR/VR.
++ Text reading
++ Shake detection
 
 
 ## Tech Stack
@@ -43,3 +43,11 @@ It consists of the following modules or tools:
 ![Voice navigation](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Android_NavegacionVoz.png)
 
 ![Information point main screen](https://github.com/arkanto99/ETSIIT_Utilities/blob/master/Documentacion/images/Leap_Principal.jpeg)
+
+
+## Authors
+
+- [Carlos Lao Vizcaíno](https://github.com/carloslao)
+- [Eduardo Muñoz del Pino](https://github.com/eduardo7423)
+- [Pablo Rodríguez Fernández](https://github.com/arkanto99)
+- [Sergio Jesús Jerez Vázquez](https://github.com/sjjerez)
